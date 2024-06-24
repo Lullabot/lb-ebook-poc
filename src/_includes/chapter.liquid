@@ -18,10 +18,14 @@ layout: layout
 
 
 <div class="ebook-page-container">
-  <div class="ebook-copy">
-    <p class="chapter">Chapter {{ chapterIndex }}</p>
-    <p class="title">{{ title }} </p>
-    <p class="copy-paragraph">{{ content }}</p>
+  <div class="ebook-heading-container">
+    <div class="ebook-chapter-heading">
+      <p class="ebook-chapter-number">Chapter {{ chapterIndex }}</p>
+      <p class="ebook-chapter-title">{{ title }} </p>
+    </div>
+    <div class="ebook-copy">
+      <p class="copy-paragraph">{{ content }}</p>
+    </div>
   </div>
   <div class="ebook-image">
     {% if image %}

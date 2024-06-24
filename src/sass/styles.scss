@@ -25,7 +25,6 @@ main {
   height: 100vh;
   border-right: 1px solid $lb-gray;
   box-sizing: border-box;
-  // box-shadow: -10px 10px 10px 10px $lb-gray;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -200,13 +199,22 @@ p.title {
     padding: 7em;
   }
 
-  .ebook-copy {
-    p:first-of-type {
+  .ebook-chapter-heading {
+    padding-bottom: 0;
+
+    .ebook-chapter-number {
       text-transform: uppercase;
       color: $lb-red;
       font-weight: 700;
     }
 
+    .ebook-chapter-title {
+      font-size: 28px;
+      font-weight: bold;
+    }
+  }
+
+  .ebook-copy {
     .copy-paragraph {
       font-size: 1.25em;
       line-height: 2;
@@ -215,5 +223,33 @@ p.title {
 
   .ebook-image {
     background-color: $lb-gray;
+    max-width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+
+    img {
+      max-width: 586px;
+      overflow: auto;
+    }
+  }
+}
+
+@media (width <= 768px) {
+  .ebook-page-container {
+    flex-direction: column;
+
+    .ebook-heading-container {
+      order: 2;
+    }
+
+    div {
+      padding: 2em;
+    }
+
+    .ebook-image {
+      max-width: unset;
+    }
   }
 }
