@@ -1,6 +1,6 @@
 ---
 title: "Why your CMS project will fail"
-image: "illustration.png"
+image: "Illustration.png"
 layout: chapter
 ---
 
