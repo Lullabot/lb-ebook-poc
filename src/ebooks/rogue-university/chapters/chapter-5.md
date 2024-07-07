@@ -1,6 +1,6 @@
 ---
 title: "Research"
-image: "personas@2x.jpg"
+image: "Personas@2x.jpg"
 layout: chapter
 ---
 
