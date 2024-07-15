@@ -1,6 +1,7 @@
 $lb-black: #01070b;
 $lb-red: #f81e00;
 $lb-gray: #e0e6eb;
+$lb-ocean: #869EAE;
 $lb-white: #fff;
 
 body {
@@ -98,15 +99,23 @@ main {
 
 .cover {
   background-color: $lb-black;
+  background-image: url('/img/Pattern - Dots.png');
+  background-size: initial;
+  background-position: center right;
+  background-repeat: no-repeat;
   color: #fff;
   padding: 7em;
 
   > p {
     text-transform: uppercase;
+    font-size: 16px;
+    color: $lb-ocean;
   }
 
+
   h1 {
-    font-size: 75px;
+    font-size: 104px;
+    line-height: 112px;
     font-weight: 700;
   }
 }
