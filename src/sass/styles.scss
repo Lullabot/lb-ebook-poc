@@ -34,6 +34,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 80px;
 
     div {
       transform: rotate(-90deg);
@@ -44,6 +45,10 @@ main {
 }
 
 .logo-container {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
   background-color: $lb-red;
   height: 80px;
   width: 80px;
