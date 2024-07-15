@@ -125,6 +125,56 @@ main {
   }
 }
 
+div.get-started {
+  float: right;
+
+  a {
+    text-decoration: none;
+    color: $lb-black;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 1.4px;
+    z-index: 0;
+    border: 1.5px solid $lb-red;
+    align-items: center;
+    display: inline-flex;
+    padding: 1rem 2rem;
+    transition-property: background-color, box-shadow;
+    transition-duration: .25s;
+    position: relative;
+  }
+  a::before {
+    content: '';
+    width: 0;
+    transition: width .25s;
+    height: 100%;
+    background-color: $lb-red;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  a:hover {
+    background-color: $lb-red;
+    color: $lb-white;
+  }
+  a:hover::before {
+    width: 100%;
+  }
+
+  .gs-arrow-right {
+    margin-left: 1em;
+    background-image: url('/img/Icon - Arrow Right.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 16px;
+    height: 16px;
+  }
+}
+
 .cover-copy {
   background-color: #fff;
   color: $lb-black;
