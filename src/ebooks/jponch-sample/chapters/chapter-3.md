@@ -3,8 +3,6 @@ title: "The people who use the site the most are never consulted"
 layout: chapter
 ---
 
-# The People who Use the Site the Most Are Never Consulted
-
 This problem comes in two flavors, and projects can have both.
 The primary audience—actual end users—was never asked what they needed or what actions they perform when using the website. Do they even want a website at all?
 The internal users, those who create, edit, and manage the site content, aren’t asked what sorts of features and options would best support their workflows and ability to communicate with their audience.
