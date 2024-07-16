@@ -241,18 +241,20 @@ div.get-started {
   }
 }
 
-p.chapter {
-  font-size: 1.25em;
-  font-weight: 700;
-  margin-bottom: 2em; 
-  color: $lb-red;
-}
+p {
+  .chapter {
+    font-size: 1.25em;
+    font-weight: 700;
+    margin-bottom: 2em; 
+    color: $lb-red;
+  }
 
-p.title {
-  font-size: 2em;
-  font-weight: 700;
-  margin-bottom: 2em; 
-  color: $lb-black;
+  .title {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 2em; 
+    color: $lb-black;
+  }
 }
 
 .ebook-page-container {
