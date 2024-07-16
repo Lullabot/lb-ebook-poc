@@ -254,6 +254,14 @@ p.title {
   .cover-copy {
     padding: 5%;
   }
+
+  .toc-container {
+    padding: 2em;
+
+    .toc-column {
+      max-width: unset;
+    }
+  }
 }
 
 @media (width <= 1440px) {
@@ -281,5 +289,6 @@ p.title {
 
   .page-number {
     position: relative;
+    border: 0;
   }
 }
