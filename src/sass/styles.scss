@@ -3,13 +3,16 @@ $lb-red: #f81e00;
 $lb-gray: #e0e6eb;
 $lb-white: #fff;
 
+@import "/fonts/fonts.css";
+
 body {
   margin: 0;
   display: flex;
 }
 
 main {
-  font-family: verdana, sans-serif;
+  font-family: 'Circular', verdana, sans-serif;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -60,7 +63,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: verdana, sans-serif;
+  font-family: 'IBMPlexMono';
   border-top: 1px solid $lb-gray;
   font-size: 14px;
   font-weight: 400;
@@ -171,6 +174,22 @@ main {
       display: flex;
       flex-direction: column;
     }
+  }
+}
+
+p {
+  .chapter {
+    font-size: 1.25em;
+    font-weight: 700;
+    margin-bottom: 2em; 
+    color: $lb-red;
+  }
+
+  .title {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 2em; 
+    color: $lb-black;
   }
 }
 

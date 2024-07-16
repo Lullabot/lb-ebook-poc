@@ -2,10 +2,25 @@
 layout: layout
 ---
 
+
+{% assign currentBookSlug = page.filePathStem | split: "/" | slice: 2, 1 | join: "" %}
+{% assign bookWithChapters = collections.booksWithChapters | where: "book.slug", currentBookSlug | first %}
+{% assign chapter = bookWithChapters.chapters | where: "url", page.url | first %}
+{% assign previousChapter = chapter.previous %}
+{% assign nextChapter = chapter.next %}
+{% assign isFirstChapter = chapter.index == 0 %}
+{% assign isLastChapter = chapter.index == bookWithChapters.chapters.size | minus: 1 %}
+
+{% assign chapterIndex = chapter.index | plus: 1 %}
+{% if chapterIndex < 10 %}
+  {% assign chapterIndex = "0" | append: chapterIndex %}
+{% endif %}
+
+
 <div class="ebook-page-container">
   <div class="ebook-heading-container">
     <div class="ebook-chapter-heading">
-      <p class="ebook-chapter-number">Chapter {{ page.fileSlug | replace: 'chapter-', '' }}</p>
+      <p class="ebook-chapter-number">Chapter {{ chapterIndex }}</p>
       <p class="ebook-chapter-title">{{ title }} </p>
     </div>
     <div class="ebook-copy">
@@ -19,14 +34,6 @@ layout: layout
     {% endif %}
   </div>
 </div>
-
-{% assign currentBookSlug = page.filePathStem | split: "/" | slice: 2, 1 | join: "" %}
-{% assign bookWithChapters = collections.booksWithChapters | where: "book.slug", currentBookSlug | first %}
-{% assign chapter = bookWithChapters.chapters | where: "url", page.url | first %}
-{% assign previousChapter = chapter.previous %}
-{% assign nextChapter = chapter.next %}
-{% assign isFirstChapter = chapter.index == 0 %}
-{% assign isLastChapter = chapter.index == bookWithChapters.chapters.size | minus: 1 %}
 
 <div class="nav-container">
   {% if isFirstChapter %}
