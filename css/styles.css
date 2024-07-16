@@ -29,6 +29,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 80px;
 }
 .sidebar .page-title div {
   transform: rotate(-90deg);
@@ -37,6 +38,10 @@ main {
 }
 
 .logo-container {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
   background-color: #f81e00;
   height: 80px;
   width: 80px;
@@ -90,15 +95,70 @@ main {
 
 .cover {
   background-color: #01070b;
+  background-image: url("/img/Pattern - Dots.png");
+  background-size: initial;
+  background-position: center right;
+  background-repeat: no-repeat;
   color: #fff;
   padding: 7em;
 }
 .cover > p {
   text-transform: uppercase;
+  font-size: 16px;
+  color: #869EAE;
 }
 .cover h1 {
-  font-size: 75px;
+  font-size: 104px;
+  line-height: 112px;
   font-weight: 700;
+}
+
+div.get-started {
+  float: right;
+}
+div.get-started a {
+  text-decoration: none;
+  color: #01070b;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 1.4px;
+  z-index: 0;
+  border: 1.5px solid #f81e00;
+  align-items: center;
+  display: inline-flex;
+  padding: 1rem 2rem;
+  transition-property: background-color, box-shadow;
+  transition-duration: 0.25s;
+  position: relative;
+}
+div.get-started a::before {
+  content: "";
+  width: 0;
+  transition: width 0.25s;
+  height: 100%;
+  background-color: #f81e00;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+div.get-started a:hover {
+  background-color: #f81e00;
+  color: #fff;
+}
+div.get-started a:hover::before {
+  width: 100%;
+}
+div.get-started .gs-arrow-right {
+  margin-left: 1em;
+  background-image: url("/img/Icon - Arrow Right.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 16px;
 }
 
 .cover-copy {
@@ -185,6 +245,10 @@ p .title {
   font-weight: 700;
 }
 .ebook-page-container .ebook-chapter-heading .ebook-chapter-title {
+  font-size: 28px;
+  font-weight: bold;
+}
+.ebook-page-container .ebook-copy .ebook-chapter-title {
   font-size: 28px;
   font-weight: bold;
 }
