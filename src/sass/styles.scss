@@ -4,13 +4,101 @@ $lb-gray: #e0e6eb;
 $lb-ocean: #869EAE;
 $lb-white: #fff;
 
+@font-face {
+  font-family: 'Circular';
+  src: url('/fonts/Circular/Circular-Bold.woff2') format('woff2'),
+    url('/fonts/Circular/Circular-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Circular';
+  src: url('/fonts/Circular/Circular-BoldItalic.woff2') format('woff2'),
+    url('/fonts/Circular/Circular-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Circular';
+  src: url('/fonts/Circular/Circular-Medium.woff2') format('woff2'),
+    url('/fonts/Circular/Circular-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Circular';
+  src: url('/fonts/Circular/Circular-MediumItalic.woff2') format('woff2'),
+    url('/fonts/Circular/Circular-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Circular';
+  src: url('/fonts/Circular/Circular-Book.woff2') format('woff2'),
+    url('/fonts/Circular/Circular-Book.woff') format('woff');
+  font-weight: 450;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Circular';
+  src: url('/fonts/Circular/Circular-BookItalic.woff2') format('woff2'),
+    url('/fonts/Circular/Circular-BookItalic.woff') format('woff');
+  font-weight: 450;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBMPlexMono';
+  src: url('/fonts/IBMPlexMono/IBMPlexMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBMPlexMono';
+  src: url('/fonts/IBMPlexMono/IBMPlexMono-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBMPlexMono';
+  src: url('/fonts/IBMPlexMono/IBMPlexMono-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBMPlexMono';
+  src: url('/fonts/IBMPlexMono/IBMPlexMono-BoldItalic.ttf')
+    format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
 body {
   margin: 0;
   display: flex;
 }
 
 main {
-  font-family: verdana, sans-serif;
+  font-family: 'Circular', verdana, sans-serif;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -67,7 +155,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: verdana, sans-serif;
+  font-family: 'IBMPlexMono';
   border-top: 1px solid $lb-gray;
   font-size: 14px;
   font-weight: 400;
@@ -237,6 +325,20 @@ div.get-started {
       flex-direction: column;
     }
   }
+}
+
+p.chapter {
+  font-size: 1.25em;
+  font-weight: 700;
+  margin-bottom: 2em; 
+  color: $lb-red;
+}
+
+p.title {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 2em; 
+  color: $lb-black;
 }
 
 .ebook-page-container {
