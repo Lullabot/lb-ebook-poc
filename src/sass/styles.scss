@@ -281,6 +281,13 @@ p {
   }
 
   .ebook-copy {
+    .ebook-chapter-title {
+      font-size: 28px;
+      font-weight: bold;
+    }
+  }
+
+  .ebook-copy {
     .copy-paragraph {
       font-size: 1.25em;
       line-height: 2;
@@ -302,45 +309,7 @@ p {
   }
 }
 
-@media (width <= 425px) {
-  .toc-container .toc-columns {
-    display: block;
-  }
-}
-
 @media (width <= 768px) {
-  .cover {
-    padding: 5%;
-
-    
-    h1 {
-      font-size: 2em;
-    }
-  }
-  .cover-copy {
-    padding: 5%;
-  }
-
-  .toc-container {
-    padding: 2em;
-
-    .toc-column {
-      max-width: unset;
-    }
-  }
-}
-
-@media (width <= 1440px) {
-  body {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    height: auto;
-    width: auto;
-    flex-direction: row;
-  }
-
   .ebook-page-container {
     flex-direction: column;
 
@@ -348,13 +317,12 @@ p {
       order: 2;
     }
 
+    div {
+      padding: 2em;
+    }
+
     .ebook-image {
       max-width: unset;
     }
-  }
-
-  .page-number {
-    position: relative;
-    border: 0;
   }
 }
