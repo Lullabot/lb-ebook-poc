@@ -1,6 +1,7 @@
 $lb-black: #01070b;
 $lb-red: #f81e00;
 $lb-gray: #e0e6eb;
+$lb-ocean: #869EAE;
 $lb-white: #fff;
 
 @import "/fonts/fonts.css";
@@ -35,6 +36,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 80px;
 
     div {
       transform: rotate(-90deg);
@@ -45,6 +47,10 @@ main {
 }
 
 .logo-container {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
   background-color: $lb-red;
   height: 80px;
   width: 80px;
@@ -100,16 +106,74 @@ main {
 
 .cover {
   background-color: $lb-black;
+  background-image: url('/img/Pattern - Dots.png');
+  background-size: initial;
+  background-position: center right;
+  background-repeat: no-repeat;
   color: #fff;
   padding: 7em;
 
   > p {
     text-transform: uppercase;
+    font-size: 16px;
+    color: $lb-ocean;
   }
 
+
   h1 {
-    font-size: 75px;
+    font-size: 104px;
+    line-height: 112px;
     font-weight: 700;
+  }
+}
+
+div.get-started {
+  float: right;
+
+  a {
+    text-decoration: none;
+    color: $lb-black;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 1.4px;
+    z-index: 0;
+    border: 1.5px solid $lb-red;
+    align-items: center;
+    display: inline-flex;
+    padding: 1rem 2rem;
+    transition-property: background-color, box-shadow;
+    transition-duration: .25s;
+    position: relative;
+  }
+  a::before {
+    content: '';
+    width: 0;
+    transition: width .25s;
+    height: 100%;
+    background-color: $lb-red;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  a:hover {
+    background-color: $lb-red;
+    color: $lb-white;
+  }
+  a:hover::before {
+    width: 100%;
+  }
+
+  .gs-arrow-right {
+    margin-left: 1em;
+    background-image: url('/img/Icon - Arrow Right.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 16px;
+    height: 16px;
   }
 }
 
@@ -217,6 +281,10 @@ p {
   }
 
   .ebook-copy {
+    .ebook-chapter-title {
+      font-size: 28px;
+      font-weight: bold;
+    }
     .copy-paragraph {
       font-size: 1.25em;
       line-height: 2;

@@ -9,22 +9,25 @@
     <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body>
-    <div class="sidebar">
-      <div class="logo-container">
-        <a href="https://lullabot.com/">
-          <div>
-            <img src="/img/logo.svg" alt="" />
-          </div>
-        </a>
-      </div>
-      <div class="page-title">
-        <div>{{ chapter.data.title }}</div>
-      </div>
-      
+
+    <div class="logo-container">
+      <a href="https://lullabot.com/">
+        <div>
+          <img src="/img/logo.svg" alt="" />
+        </div>
+      </a>
+    </div>
+
+    {% if page.fileSlug != 'cover' %}
+      <div class="sidebar">
+        
       {% assign currentBookSlug = page.filePathStem | split: "/" | slice: 2, 1 | join: "" %}  
       {% for bookWithChapters in collections.booksWithChapters %}
         {% if bookWithChapters.book.slug == currentBookSlug %}
-          {% assign chapter = bookWithChapters.chapters | where: "url", page.url | first %}
+
+        <div class="page-title">
+          <div>{{ bookWithChapters.book.title }}</div>
+        </div>
           <div class="page-number">
             <div>
               {% if page.fileSlug == 'cover' %}
@@ -32,24 +35,15 @@
               {% elsif page.fileSlug == 'table-of-contents' %}
                 TOC
               {% else %}
-                {% assign chapterNumber = page.fileSlug | remove: 'chapter-' %}
-                {% assign numericChapterNumber = chapterNumber | plus: 0 %}
-                {% if numericChapterNumber == 0 or numericChapterNumber > 0 %}
-                  {% if numericChapterNumber < 10 %}
-                    0{{ numericChapterNumber }}
-                  {% else %}
-                    {{ numericChapterNumber }}
-                  {% endif %}
-                {% else %}
-                  {{ chapterNumber }}
-                {% endif %}
+                {{ page.fileSlug | replace: 'chapter-', '' }}
               {% endif %}
             </div>
           </div>
         {% endif %}
       {% endfor %}
-      
-    </div>
+        
+      </div>
+    {% endif %}
     <main>
       {{ content }}
     </main>

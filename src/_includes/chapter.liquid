@@ -2,7 +2,6 @@
 layout: layout
 ---
 
-
 {% assign currentBookSlug = page.filePathStem | split: "/" | slice: 2, 1 | join: "" %}
 {% assign bookWithChapters = collections.booksWithChapters | where: "book.slug", currentBookSlug | first %}
 {% assign chapter = bookWithChapters.chapters | where: "url", page.url | first %}
