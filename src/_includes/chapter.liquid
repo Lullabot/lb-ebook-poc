@@ -23,15 +23,15 @@ layout: layout
       <p class="ebook-chapter-title">{{ title }} </p>
     </div>
     <div class="ebook-copy">
-      <p class="copy-paragraph">{{ content }}</p>
+      <div class="copy-paragraph">{{ content }}</div>
     </div>
   </div>
-  <div class="ebook-image">
-    {% if image %}
+  {% if image %}
+    <div class="ebook-image">
       {% assign currentBookSlug = page.filePathStem | split: "/" | slice: 2, 1 | join: "" %}
-      <img src="/ebooks/{{ currentBookSlug }}/images/{{ image }}" alt="{{ title }}">
-    {% endif %}
-  </div>
+      <img src="/ebooks/{{ currentBookSlug }}/images/{{ image }}" alt="{{ title }}">  
+    </div>
+  {% endif %}
 </div>
 
 <div class="nav-container">
