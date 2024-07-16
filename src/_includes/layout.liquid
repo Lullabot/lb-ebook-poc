@@ -20,13 +20,14 @@
 
     {% if page.fileSlug != 'cover' %}
       <div class="sidebar">
-        <div class="page-title">
-          <div>{{ chapter.data.title }}</div>
-        </div>
         
       {% assign currentBookSlug = page.filePathStem | split: "/" | slice: 2, 1 | join: "" %}  
       {% for bookWithChapters in collections.booksWithChapters %}
         {% if bookWithChapters.book.slug == currentBookSlug %}
+
+        <div class="page-title">
+          <div>{{ bookWithChapters.book.title }}</div>
+        </div>
           <div class="page-number">
             <div>
               {% if page.fileSlug == 'cover' %}
