@@ -237,6 +237,14 @@ main {
   .cover-copy {
     padding: 5%;
   }
+
+  .toc-container {
+    padding: 2em;
+
+    .toc-column {
+      max-width: unset;
+    }
+  }
 }
 
 @media (width <= 1440px) {
@@ -264,5 +272,6 @@ main {
 
   .page-number {
     position: relative;
+    border: 0;
   }
 }
