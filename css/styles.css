@@ -1,10 +1,12 @@
+@import "/fonts/fonts.css";
 body {
   margin: 0;
   display: flex;
 }
 
 main {
-  font-family: verdana, sans-serif;
+  font-family: "Circular", verdana, sans-serif;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -53,7 +55,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: verdana, sans-serif;
+  font-family: "IBMPlexMono";
   border-top: 1px solid #e0e6eb;
   font-size: 14px;
   font-weight: 400;
@@ -152,6 +154,19 @@ main {
 .toc-container .chapter-item .chapter-title-wrapper {
   display: flex;
   flex-direction: column;
+}
+
+p .chapter {
+  font-size: 1.25em;
+  font-weight: 700;
+  margin-bottom: 2em;
+  color: #f81e00;
+}
+p .title {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 2em;
+  color: #01070b;
 }
 
 .ebook-page-container {
