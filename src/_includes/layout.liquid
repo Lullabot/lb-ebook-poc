@@ -11,17 +11,13 @@
   </head>
   <body>
 
-    <div class="logo-container">
-      <a href="https://lullabot.com/" aria-label="Lullabot.com homepage">
-        <div>
-          <img src="/img/logo.svg" alt="Lullabot.com homepage" />
-        </div>
-      </a>
-    </div>
-
     {% if page.fileSlug != 'cover' %}
       <div class="sidebar">
-        
+        {% include 'logo-container' %}
+        <div class="navigation-btn">
+          {% include 'hamburger' %}
+        </div>
+
       {% assign currentBookSlug = page.filePathStem | split: "/" | slice: 2, 1 | join: "" %}  
       {% for bookWithChapters in collections.booksWithChapters %}
         {% if bookWithChapters.book.slug == currentBookSlug %}

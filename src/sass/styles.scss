@@ -34,6 +34,12 @@ main {
   flex-direction: column;
   justify-content: space-between;
 
+  // .navigation-btn {
+  //   background-image: url('/img/Icon\ -\ Hamburger.svg');
+  //   width: 80px;
+  //   height: 80px;
+  // }
+
   .page-title {
     flex-grow: 1;
     white-space: nowrap;
@@ -50,11 +56,8 @@ main {
   }
 }
 
-.logo-container {
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
+.logo-container,
+.logo-container-cover {
   background-color: $lb-red;
   height: 80px;
   width: 80px;
@@ -75,6 +78,13 @@ main {
 .logo-container svg rect {
   fill: $lb-red;
   transition: fill 0.3s ease;
+}
+
+.logo-container {
+}
+
+.logo-container-cover {
+  position: fixed;
 }
 
 .page-number {
@@ -334,7 +344,7 @@ p {
 @media (width <= 768px) {
   .cover {
     padding: 5%;
-
+    padding-top: 7em;
     
     h1 {
       font-size: 2em;
@@ -362,6 +372,10 @@ p {
     height: auto;
     width: auto;
     flex-direction: row;
+
+    .page-title {
+      transform: rotate(90deg);
+    }
   }
 
   .ebook-page-container {
