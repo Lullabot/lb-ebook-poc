@@ -253,8 +253,9 @@ p .title {
   font-weight: bold;
 }
 .ebook-page-container .ebook-copy .copy-paragraph {
-  font-size: 1.25em;
+  font-size: 20px;
   line-height: 2;
+  padding: 0;
 }
 .ebook-page-container .ebook-image {
   background-color: #e0e6eb;
