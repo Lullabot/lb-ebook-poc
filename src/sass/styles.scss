@@ -34,11 +34,21 @@ main {
   flex-direction: column;
   justify-content: space-between;
 
-  // .navigation-btn {
-  //   background-image: url('/img/Icon\ -\ Hamburger.svg');
-  //   width: 80px;
-  //   height: 80px;
-  // }
+  .navigation-btn {
+    &:hover {
+      cursor: pointer;
+
+      .hamburger-bg {
+        fill: $lb-black;
+      }
+      .hamburger-border {
+        fill: $lb-black;
+      }
+      .hamburger-lines * {
+        stroke: $lb-white;
+      }
+    }
+  }
 
   .page-title {
     flex-grow: 1;
