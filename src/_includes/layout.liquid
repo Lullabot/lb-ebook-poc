@@ -12,9 +12,9 @@
   <body>
 
     <div class="logo-container">
-      <a href="https://lullabot.com/">
+      <a href="https://lullabot.com/" aria-label="Lullabot.com homepage">
         <div>
-          <img src="/img/logo.svg" alt="" />
+          <img src="/img/logo.svg" alt="Lullabot.com homepage" />
         </div>
       </a>
     </div>
@@ -30,7 +30,8 @@
           <div>{{ bookWithChapters.book.title }}</div>
         </div>
           <div class="page-number">
-            <div>
+            <div aria-label="Current page number">
+              <span class="visually-hidden">Page: </span>
               {% if page.fileSlug == 'cover' %}
                 <!-- Empty for cover page -->
               {% elsif page.fileSlug == 'table-of-contents' %}
