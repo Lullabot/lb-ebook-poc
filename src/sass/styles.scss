@@ -28,13 +28,22 @@ main {
 .sidebar {
   width: 80px;
   height: 100vh;
-  border-right: 1px solid $lb-gray;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-right: 1px solid $lb-gray;
 
   .navigation-btn {
+    .hamburger-bg,
+    .hamburger-border {
+      transition: fill 0.5s ease;
+    }
+
+    .hamburger-lines * {
+      transition: stroke 0.5s ease;
+    }
+
     &:hover {
       cursor: pointer;
 
@@ -66,6 +75,31 @@ main {
   }
 }
 
+.navigation-wrapper {
+  max-width: 472px;
+  position: fixed;
+
+  .toc-container {
+    padding: 1em;
+    background-color: $lb-white;
+    box-shadow: 16px 16px 16px $lb-gray;
+    border-left: 1px solid $lb-gray;
+    margin-left: -1px;
+
+    .toc-column {
+      max-width: unset;
+    }
+
+    .chapter-item {
+      font-size: 1em;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
 .logo-container,
 .logo-container-cover {
   background-color: $lb-red;
@@ -88,9 +122,6 @@ main {
 .logo-container svg rect {
   fill: $lb-red;
   transition: fill 0.3s ease;
-}
-
-.logo-container {
 }
 
 .logo-container-cover {
@@ -298,7 +329,8 @@ p {
 .ebook-page-container {
   display: flex;
   height: 100%;
-  
+  border-left: 1px solid $lb-gray;
+
   div {
     padding: 5%;
   }
