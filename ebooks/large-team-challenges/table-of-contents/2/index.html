@@ -12,9 +12,9 @@
   <body>
 
     <div class="logo-container">
-      <a href="https://lullabot.com/">
+      <a href="https://lullabot.com/" aria-label="Lullabot.com homepage">
         <div>
-          <img src="/img/logo.svg" alt="" />
+          <img src="/img/logo.svg" alt="Lullabot.com homepage" />
         </div>
       </a>
     </div>
@@ -32,7 +32,8 @@
           <div>Challenges for Large Content Teams</div>
         </div>
           <div class="page-number">
-            <div>
+            <div aria-label="Current page number">
+              <span class="visually-hidden">Page: </span>
               
                 TOC
               
@@ -51,8 +52,8 @@
     
     <main>
       
-<nav class="toc-container">
-  <p>Table of Contents</p>
+<nav class="toc-container" aria-labelledby="toc-title">
+  <p id="toc-title">Table of Contents</p>
   <div class="toc-columns">
     
     
@@ -262,7 +263,7 @@
   </div>
 </nav>
 
-<div class="nav-container">
+<nav class="nav-container" aria-label="E-book arrow navigation">
   <a href="../cover/">
     <div class="nav-button">
       <i class="gg-arrow-left"></i>
@@ -273,7 +274,7 @@
       <i class="gg-arrow-right"></i>
     </div>
   </a>
-</div>
+</nav>
 
     </main>
   </body>

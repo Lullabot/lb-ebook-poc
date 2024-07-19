@@ -1,4 +1,8 @@
 @import "/fonts/fonts.css";
+.visually-hidden {
+  display: none;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -48,6 +52,20 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.logo-container:hover {
+  background-color: #01070b;
+}
+
+.logo-container:hover svg rect {
+  fill: #01070b;
+}
+
+.logo-container svg rect {
+  fill: #f81e00;
+  transition: fill 0.3s ease;
 }
 
 .page-number {
