@@ -36,14 +36,14 @@ layout: layout
 
 <nav class="nav-container" aria-label="E-book arrow navigation">
   {% if isFirstChapter %}
-    <a href="../../table-of-contents/">
+    <a href="../../table-of-contents/" aria-label="Previous chapter">
       <div class="nav-button">
         <i class="gg-arrow-left"></i>
       </div>
     </a>
   {% else %}
     {% if previousChapter %}
-      <a href="{{ previousChapter.url }}">
+      <a href="{{ previousChapter.url }}" aria-label="Previous chapter">
         <div class="nav-button">
           <i class="gg-arrow-left"></i>
         </div>
@@ -52,7 +52,7 @@ layout: layout
   {% endif %}
 
   {% if nextChapter %}
-    <a href="{{ nextChapter.url }}">
+    <a href="{{ nextChapter.url }}" aria-label="Next chapter">
       <div class="nav-button">
         <i class="gg-arrow-right"></i>
       </div>
