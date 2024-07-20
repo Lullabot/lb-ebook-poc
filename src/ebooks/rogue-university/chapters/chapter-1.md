@@ -1,6 +1,7 @@
 ---
 title: "Introduction"
 image: "illustration_archepelago.png"
+image-alt: "your alt text here"
 layout: chapter
 ---
 

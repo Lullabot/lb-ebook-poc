@@ -1,6 +1,7 @@
 ---
 title: Translation drift
 image: "chapter-8.png"
+image-alt: "your alt text here"
 layout: chapter
 ---
 

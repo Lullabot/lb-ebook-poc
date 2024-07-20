@@ -1,6 +1,7 @@
 ---
 title: Multiple copies of assets
 image: "chapter-5.png"
+image-alt: "your alt text here"
 layout: chapter
 ---
 

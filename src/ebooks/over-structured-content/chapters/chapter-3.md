@@ -1,6 +1,7 @@
 ---
 title: "Lots of documentation for seemingly simple tasks"
 image: "Over-documented@2x.jpg"
+image-alt: "your alt text here"
 layout: chapter
 ---
 

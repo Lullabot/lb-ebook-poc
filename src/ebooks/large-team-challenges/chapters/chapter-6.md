@@ -1,6 +1,7 @@
 ---
 title: Editors who use the website infrequently
 image: "chapter-6.png"
+image-alt: "your alt text here"
 layout: chapter
 ---
 Some editors may only hop in every few weeks or every few months. They

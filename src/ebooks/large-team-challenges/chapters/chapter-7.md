@@ -1,6 +1,7 @@
 ---
 title: "Workflow bottlenecks"
 image: "chapter-7.png"
+image-alt: "your alt text here"
 layout: chapter
 ---
 How many gates does a piece of content need to pass through before it gets

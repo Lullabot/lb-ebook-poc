@@ -1,6 +1,7 @@
 ---
 title: "Stakeholder and user interviews"
 image: "page_10_image_1.jpeg"
+image-alt: "your alt text here"
 layout: chapter
 ---
 The only way to find out what will work for your organization is to talk to the people who make up your organization. And then, talk to users of your website and find out what their needs and pain points are. Remember, however, not to ignore your internal users.

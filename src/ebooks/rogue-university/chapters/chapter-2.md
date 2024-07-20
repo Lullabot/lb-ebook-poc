@@ -1,6 +1,7 @@
 ---
 title: "Why Governing Archipelagos Can Be Challenging"
 image: "illustration_umbrella-org.png"
+image-alt: "your alt text here"
 layout: chapter
 ---
 
