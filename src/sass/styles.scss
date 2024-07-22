@@ -23,6 +23,12 @@ main {
   justify-content: space-between;
   min-width: calc(100% - 81px);
   position: relative;
+  height: 100vh;
+  border-left: 1px solid $lb-gray;
+}
+
+.cover-main {
+  border-left: 0;
 }
 
 .sidebar {
@@ -138,10 +144,6 @@ main {
 }
 
 .page-number {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
   height: 80px;
   width: 80px;
   display: flex;
@@ -256,16 +258,16 @@ div.get-started {
 }
 
 .cover-copy {
-  background-color: #fff;
+  background-color: $lb-white;
   color: $lb-black;
   padding: 7em;
   font-size: 1.25em;
 }
 
 .toc-container {
-  padding: 4em; 
+  padding: 4em;
   padding-top: 10em;
-  text-align: left; 
+  text-align: left;
 
   > p {
     text-transform: uppercase;
@@ -338,7 +340,6 @@ p {
 .ebook-page-container {
   display: flex;
   height: 100%;
-  border-left: 1px solid $lb-gray;
 
   div {
     padding: 5%;
@@ -423,7 +424,6 @@ p {
     height: 80px;
     width: auto;
     flex-direction: row;
-    border: 0;
 
     .page-title {
       transform: rotate(90deg);
@@ -433,6 +433,12 @@ p {
         text-overflow: ellipsis;
       }
     }
+  }
+
+  .toc-container,
+  .ebook-page-container {
+    border-left: 0;
+    border-top: 1px solid $lb-gray;
   }
 
   .ebook-page-container {

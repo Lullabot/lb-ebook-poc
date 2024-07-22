@@ -41,8 +41,10 @@
       {% endfor %}
         
       </div>
-    {% endif %}
     <main>
+    {% else %}
+    <main class="cover-main">
+    {% endif %}
       <div class="navigation-wrapper hidden">{% include 'menu' %}</div>
       {{ content }}
     </main>
