@@ -14,7 +14,8 @@
       <div class="sidebar">
         {% include 'logo-container' %}
         <div class="navigation-btn">
-          {% include 'hamburger-icon' %}
+          <div class="hamburger-icon">{% include 'hamburger-icon' %}</div>
+          <div class="close-icon hidden">{% include 'close-icon' %}</div>
         </div>
 
       {% assign currentBookSlug = page.filePathStem | split: "/" | slice: 2, 1 | join: "" %}  
