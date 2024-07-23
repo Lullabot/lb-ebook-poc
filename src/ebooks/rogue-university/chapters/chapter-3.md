@@ -1,6 +1,7 @@
 ---
 title: "Three Types of Archipelagos"
 image: "illustration_centralized-vs-decentralized@2x.png"
+image-alt: "your alt text here"
 layout: chapter
 ---
 

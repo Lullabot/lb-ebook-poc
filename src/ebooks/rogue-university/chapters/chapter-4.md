@@ -1,6 +1,7 @@
 ---
 title: "The Magical Intersection of Success"
 image: "illustration_umbrella-subsidiaries-users_diagram.png"
+image-alt: "your alt text here"
 layout: chapter
 ---
 

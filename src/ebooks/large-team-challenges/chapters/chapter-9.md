@@ -1,6 +1,7 @@
 ---
 title: Permissions that don’t match the requirements of your team
 image: "chapter-9.png"
+image-alt: "your alt text here"
 layout: chapter
 ---
 
