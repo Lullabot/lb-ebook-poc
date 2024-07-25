@@ -23,16 +23,50 @@ main {
   justify-content: space-between;
   min-width: calc(100% - 81px);
   position: relative;
+  height: 100vh;
+  border-left: 1px solid $lb-gray;
+}
+
+.cover-main {
+  border-left: 0;
 }
 
 .sidebar {
   width: 80px;
   height: 100vh;
-  border-right: 1px solid $lb-gray;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  .navigation-btn {
+    border-bottom: 1px solid $lb-gray;
+    height: 80px;
+
+    .hamburger-bg,
+    .close-bg {
+      transition: fill 0.5s ease;
+    }
+
+    .hamburger-lines *,
+    .close-lines * {
+      transition: stroke 0.5s ease;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      .hamburger-bg,
+      .close-bg {
+        fill: $lb-black;
+      }
+
+      .hamburger-lines *,
+      .close-lines * {
+        stroke: $lb-white;
+      }
+    }
+  }
 
   .page-title {
     flex-grow: 1;
@@ -46,15 +80,43 @@ main {
       transform: rotate(-90deg);
       font-family: verdana, sans-serif;
       font-size: 1.25em;
+      padding: 1em;
     }
   }
 }
 
-.logo-container {
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
+.navigation-wrapper {
+  max-width: 472px;
+  position: absolute;
+  z-index: 1;
+
+  .toc-container {
+    padding: 1em;
+    background-color: $lb-white;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-left: 1px solid $lb-gray;
+
+    .toc-column {
+      max-width: unset;
+    }
+
+    .chapter-item {
+      font-size: 1em;
+      font-weight: 400;
+    }
+
+    .resources-link {
+      text-transform: none;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.logo-container,
+.logo-container-cover {
   background-color: $lb-red;
   height: 80px;
   width: 80px;
@@ -77,11 +139,11 @@ main {
   transition: fill 0.3s ease;
 }
 
-.page-number {
+.logo-container-cover {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+}
+
+.page-number {
   height: 80px;
   width: 80px;
   display: flex;
@@ -196,16 +258,16 @@ div.get-started {
 }
 
 .cover-copy {
-  background-color: #fff;
+  background-color: $lb-white;
   color: $lb-black;
   padding: 7em;
   font-size: 1.25em;
 }
 
 .toc-container {
-  padding: 4em; 
+  padding: 4em;
   padding-top: 10em;
-  text-align: left; 
+  text-align: left;
 
   > p {
     text-transform: uppercase;
@@ -278,7 +340,7 @@ p {
 .ebook-page-container {
   display: flex;
   height: 100%;
-  
+
   div {
     padding: 5%;
   }
@@ -334,7 +396,7 @@ p {
 @media (width <= 768px) {
   .cover {
     padding: 5%;
-
+    padding-top: 7em;
     
     h1 {
       font-size: 2em;
@@ -359,13 +421,29 @@ p {
   }
 
   .sidebar {
-    height: auto;
+    height: 80px;
     width: auto;
     flex-direction: row;
+
+    .page-title {
+      transform: rotate(90deg);
+
+      div {
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+
+  .toc-container,
+  .ebook-page-container {
+    border-left: 0;
+    border-top: 1px solid $lb-gray;
   }
 
   .ebook-page-container {
     flex-direction: column;
+    margin-bottom: 2em;
 
     .ebook-heading-container {
       order: 2;
@@ -376,8 +454,13 @@ p {
     }
   }
 
+  .navigation-btn {
+    order: 1;
+    border-bottom: 0;
+    border-left: 1px solid $lb-gray;
+  }
+
   .page-number {
-    position: relative;
-    border: 0;
+    display: none;
   }
 }
