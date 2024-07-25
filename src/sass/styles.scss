@@ -17,7 +17,7 @@ body {
 
 main {
   font-family: 'Circular', verdana, sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -151,7 +151,7 @@ main {
   justify-content: center;
   font-family: 'IBMPlexMono';
   border-top: 1px solid $lb-gray;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 16px;
   letter-spacing: 0.1em;
@@ -195,13 +195,13 @@ main {
 
   > p {
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1rem;
     color: $lb-ocean;
   }
 
 
   h1 {
-    font-size: 104px;
+    font-size: 6.5rem;
     line-height: 112px;
     font-weight: 700;
   }
@@ -214,7 +214,7 @@ div.get-started {
     text-decoration: none;
     color: $lb-black;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 1.4px;
@@ -261,7 +261,7 @@ div.get-started {
   background-color: $lb-white;
   color: $lb-black;
   padding: 7em;
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
 
 .toc-container {
@@ -272,7 +272,7 @@ div.get-started {
   > p {
     text-transform: uppercase;
     margin-bottom: 2em; 
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.1em;
@@ -291,7 +291,7 @@ div.get-started {
   }
 
   .chapter-item {
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 2em; 
     color: $lb-black;
@@ -323,14 +323,14 @@ div.get-started {
 
 p {
   .chapter {
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 2em; 
     color: $lb-red;
   }
 
   .title {
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 2em; 
     color: $lb-black;
@@ -355,18 +355,18 @@ p {
     }
 
     .ebook-chapter-title {
-      font-size: 28px;
+      font-size: 1.75rem;
       font-weight: bold;
     }
   }
 
   .ebook-copy {
     .ebook-chapter-title {
-      font-size: 28px;
+      font-size: 1.75rem;
       font-weight: bold;
     }
     .copy-paragraph {
-      font-size: 20px;
+      font-size: 1.25rem;
       line-height: 2;
       padding: 0;
     }
@@ -399,7 +399,7 @@ p {
     padding-top: 7em;
     
     h1 {
-      font-size: 2em;
+      font-size: 2rem;
     }
   }
   .cover-copy {
