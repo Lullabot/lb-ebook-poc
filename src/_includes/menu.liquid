@@ -1,0 +1,22 @@
+<div class="toc-container">
+  <p>Table of Contents</p>
+  {% assign currentBookSlug = page.filePathStem | split: "/" | slice: 2, 1 | join: "" %}
+  {% assign count = 1 %}
+  {% for bookWithChapters in collections.booksWithChapters %}
+    {% if bookWithChapters.book.slug == currentBookSlug %}
+      {% assign totalChapters = bookWithChapters.chapters | size %}
+      <div class="toc-column">
+        {% for chapter in bookWithChapters.chapters %}
+          <div class="chapter-item">
+            <span class="chapter-count">{% if count < 10 %}0{% endif %}{{ count | append: ' ' }}</span>
+            <div class="chapter-title-wrapper">
+              <a href="{{ chapter.url }}">{{ chapter.title }}</a>
+            </div>
+          </div>
+          {% assign count = count | plus: 1 %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endfor %}
+  <p class="resources-link">This Ebook was produced by Lullabot. For more articles, ebooks, and more check out our <a href="https://www.lullabot.com/resources">Resources</a> page.</p>
+</div>

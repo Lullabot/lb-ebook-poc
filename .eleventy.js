@@ -45,6 +45,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/ebooks/**/*.jpg");
   eleventyConfig.addPassthroughCopy("src/ebooks/**/*.jpeg");
   eleventyConfig.addPassthroughCopy("src/ebooks/**/*.gif");
+  eleventyConfig.addPassthroughCopy("src/js/interactions.js");
 
   eleventyConfig.addShortcode("image", function (src, alt, bookSlug) {
     let fullSrc = `/ebooks/${bookSlug}/images/${src}`;

@@ -10,18 +10,14 @@
     <link rel="icon" href="/img/favicon.ico" type="image/vnd.microsoft.icon" />
   </head>
   <body>
-
-    <div class="logo-container">
-      <a href="https://lullabot.com/" aria-label="Lullabot.com homepage">
-        <div>
-          <img src="/img/logo.svg" alt="Lullabot.com homepage" />
-        </div>
-      </a>
-    </div>
-
     {% if page.fileSlug != 'cover' %}
       <div class="sidebar">
-        
+        {% include 'logo-container' %}
+        <div class="navigation-btn">
+          <div class="hamburger-icon">{% include 'hamburger-icon' %}</div>
+          <div class="close-icon hidden">{% include 'close-icon' %}</div>
+        </div>
+
       {% assign currentBookSlug = page.filePathStem | split: "/" | slice: 2, 1 | join: "" %}  
       {% for bookWithChapters in collections.booksWithChapters %}
         {% if bookWithChapters.book.slug == currentBookSlug %}
@@ -45,9 +41,14 @@
       {% endfor %}
         
       </div>
-    {% endif %}
     <main>
+    {% else %}
+    <main class="cover-main">
+    {% endif %}
+      <div class="navigation-wrapper hidden">{% include 'menu' %}</div>
       {{ content }}
     </main>
+
+    <script src="/js/interactions.js"></script>
   </body>
 </html>
