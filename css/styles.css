@@ -10,7 +10,7 @@ body {
 
 main {
   font-family: "Circular", verdana, sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -132,7 +132,7 @@ main {
   justify-content: center;
   font-family: "IBMPlexMono";
   border-top: 1px solid #e0e6eb;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 16px;
   letter-spacing: 0.1em;
@@ -174,11 +174,11 @@ main {
 }
 .cover > p {
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 1rem;
   color: #869EAE;
 }
 .cover h1 {
-  font-size: 104px;
+  font-size: 6.5rem;
   line-height: 112px;
   font-weight: 700;
 }
@@ -190,7 +190,7 @@ div.get-started a {
   text-decoration: none;
   color: #01070b;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 1.4px;
@@ -235,7 +235,7 @@ div.get-started .gs-arrow-right {
   background-color: #fff;
   color: #01070b;
   padding: 7em;
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
 
 .toc-container {
@@ -246,7 +246,7 @@ div.get-started .gs-arrow-right {
 .toc-container > p {
   text-transform: uppercase;
   margin-bottom: 2em;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.1em;
@@ -262,7 +262,7 @@ div.get-started .gs-arrow-right {
   max-width: 45%;
 }
 .toc-container .chapter-item {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 2em;
   color: #01070b;
@@ -287,13 +287,13 @@ div.get-started .gs-arrow-right {
 }
 
 p .chapter {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 2em;
   color: #f81e00;
 }
 p .title {
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 2em;
   color: #01070b;
@@ -315,15 +315,15 @@ p .title {
   font-weight: 700;
 }
 .ebook-page-container .ebook-chapter-heading .ebook-chapter-title {
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: bold;
 }
 .ebook-page-container .ebook-copy .ebook-chapter-title {
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: bold;
 }
 .ebook-page-container .ebook-copy .copy-paragraph {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 2;
   padding: 0;
 }
@@ -351,7 +351,7 @@ p .title {
     padding-top: 7em;
   }
   .cover h1 {
-    font-size: 2em;
+    font-size: 2rem;
   }
   .cover-copy {
     padding: 5%;
