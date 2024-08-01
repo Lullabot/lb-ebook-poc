@@ -21,7 +21,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-width: calc(100% - 81px);
+  min-width: calc(100% - 5rem);
   position: relative;
   height: 100vh;
   border-left: 1px solid $lb-gray;
@@ -29,6 +29,7 @@ main {
 
 .cover-main {
   border-left: 0;
+  min-width: 100%;
 }
 
 .sidebar {
@@ -184,6 +185,13 @@ main {
   }
 }
 
+.cover-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
 .cover {
   background-color: $lb-black;
   background-image: url('/img/Pattern - Dots.png');
@@ -191,7 +199,8 @@ main {
   background-position: center right;
   background-repeat: no-repeat;
   color: #fff;
-  padding: 7em;
+  padding: 4.5rem;
+  flex-grow: 2;
 
   > p {
     text-transform: uppercase;
@@ -207,9 +216,24 @@ main {
   }
 }
 
-div.get-started {
-  float: right;
+.cover-copy {
+  background-color: $lb-white;
+  color: $lb-black;
+  padding: 4.5rem;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4.5rem;
 
+  p {
+    margin-left: 9rem;
+    max-width: 42rem;
+    line-height: 2rem;
+  }
+}
+
+div.get-started {
   a {
     text-decoration: none;
     color: $lb-black;
@@ -226,6 +250,7 @@ div.get-started {
     transition-property: background-color, box-shadow;
     transition-duration: .25s;
     position: relative;
+    text-wrap: nowrap;
   }
 
   a::before {
@@ -258,13 +283,6 @@ div.get-started {
     width: 16px;
     height: 16px;
   }
-}
-
-.cover-copy {
-  background-color: $lb-white;
-  color: $lb-black;
-  padding: 7em;
-  font-size: 1.25rem;
 }
 
 .toc-container {
