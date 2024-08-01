@@ -29,7 +29,7 @@ layout: layout
   {% if image %}
     <div class="ebook-image">
       {% assign currentBookSlug = page.filePathStem | split: "/" | slice: 2, 1 | join: "" %}
-      <img src="/ebooks/{{ currentBookSlug }}/images/{{ image }}" alt="{{ image-alt }}">  
+      <img src="/ebooks/{{ currentBookSlug }}/images/{{ image }}" alt="{{ image-alt }}">
     </div>
   {% endif %}
 </div>

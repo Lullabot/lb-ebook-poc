@@ -32,7 +32,7 @@ main {
 }
 
 .sidebar {
-  width: 80px;
+  width: 72px;
   height: 100vh;
   box-sizing: border-box;
   display: flex;
@@ -41,7 +41,7 @@ main {
 
   .navigation-btn {
     border-bottom: 1px solid $lb-gray;
-    height: 80px;
+    height: 72px;
 
     .hamburger-bg,
     .close-bg {
@@ -74,7 +74,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80px;
+    width: 72px;
 
     div {
       transform: rotate(-90deg);
@@ -118,8 +118,8 @@ main {
 .logo-container,
 .logo-container-cover {
   background-color: $lb-red;
-  height: 80px;
-  width: 80px;
+  height: 72px;
+  width: 72px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -144,12 +144,12 @@ main {
 }
 
 .page-number {
-  height: 80px;
-  width: 80px;
+  height: 72px;
+  width: 72px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'IBMPlexMono';
+  font-family: 'IBMPlexMono', monospace;
   border-top: 1px solid $lb-gray;
   font-size: 0.875rem;
   font-weight: 400;
@@ -227,6 +227,7 @@ div.get-started {
     transition-duration: .25s;
     position: relative;
   }
+
   a::before {
     content: '';
     width: 0;
@@ -238,10 +239,12 @@ div.get-started {
     position: absolute;
     z-index: -1;
   }
+
   a:hover {
     background-color: $lb-red;
     color: $lb-white;
   }
+
   a:hover::before {
     width: 100%;
   }
@@ -265,13 +268,12 @@ div.get-started {
 }
 
 .toc-container {
-  padding: 4em;
-  padding-top: 10em;
+  padding: 10em 4em 4em;
   text-align: left;
 
   > p {
     text-transform: uppercase;
-    margin-bottom: 2em; 
+    margin-bottom: 2em;
     font-size: 1rem;
     font-weight: 500;
     line-height: 24px;
@@ -293,7 +295,7 @@ div.get-started {
   .chapter-item {
     font-size: 1.25rem;
     font-weight: 700;
-    margin-bottom: 2em; 
+    margin-bottom: 2em;
     color: $lb-black;
     display: flex;
     align-items: flex-start;
@@ -301,15 +303,15 @@ div.get-started {
     .chapter-count {
       color: $lb-red;
       margin-right: 1em;
-      flex-shrink: 0; 
+      flex-shrink: 0;
     }
 
     a {
-      text-decoration: none; 
-      color: inherit; 
+      text-decoration: none;
+      color: inherit;
 
       &:hover {
-        color: $lb-red; 
+        color: $lb-red;
       }
     }
 
@@ -325,14 +327,14 @@ p {
   .chapter {
     font-size: 1.25rem;
     font-weight: 700;
-    margin-bottom: 2em; 
+    margin-bottom: 2em;
     color: $lb-red;
   }
 
   .title {
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 2em; 
+    margin-bottom: 2em;
     color: $lb-black;
   }
 }
@@ -365,6 +367,7 @@ p {
       font-size: 1.75rem;
       font-weight: bold;
     }
+
     .copy-paragraph {
       font-size: 1.25rem;
       line-height: 2;
@@ -395,9 +398,8 @@ p {
 
 @media (width <= 768px) {
   .cover {
-    padding: 5%;
-    padding-top: 7em;
-    
+    padding: 7em 5% 5%;
+
     h1 {
       font-size: 2rem;
     }
@@ -421,7 +423,7 @@ p {
   }
 
   .sidebar {
-    height: 80px;
+    height: 72px;
     width: auto;
     flex-direction: row;
 
