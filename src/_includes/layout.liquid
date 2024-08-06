@@ -1,54 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>{{ title }}</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-right.css' rel='stylesheet'>
-    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-left.css' rel='stylesheet'>
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="icon" href="/img/favicon.ico" type="image/vnd.microsoft.icon" />
-  </head>
-  <body>
-    {% if page.fileSlug != 'cover' %}
-      <div class="sidebar">
-        {% include 'logo-container' %}
-        <div class="navigation-btn">
-          <div class="hamburger-icon">{% include 'hamburger-icon' %}</div>
-          <div class="close-icon hidden">{% include 'close-icon' %}</div>
-        </div>
+<head>
+  <title>{{ title }}</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-right.css' rel='stylesheet'>
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-left.css' rel='stylesheet'>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="/img/favicon.ico" type="image/vnd.microsoft.icon"/>
+</head>
+<body>
+{% if page.fileSlug != 'cover' %}
+  {% include 'sidebar' %}
+  <main>{% include 'menu' %}{{ content }}</main>
+{% else %}
+  <main class="cover-main">
+    {% include 'menu' %}{{ content }}</main>
+{% endif %}
 
-      {% assign currentBookSlug = page.filePathStem | split: "/" | slice: 2, 1 | join: "" %}  
-      {% for bookWithChapters in collections.booksWithChapters %}
-        {% if bookWithChapters.book.slug == currentBookSlug %}
-
-        <div class="page-title">
-          <div>{{ bookWithChapters.book.title }}</div>
-        </div>
-          <div class="page-number">
-            <div aria-label="Current page number">
-              <span class="visually-hidden">Page: </span>
-              {% if page.fileSlug == 'cover' %}
-                <!-- Empty for cover page -->
-              {% elsif page.fileSlug == 'table-of-contents' %}
-                TOC
-              {% else %}
-                {{ page.fileSlug | replace: 'chapter-', '' }}
-              {% endif %}
-            </div>
-          </div>
-        {% endif %}
-      {% endfor %}
-        
-      </div>
-    <main>
-    {% else %}
-    <main class="cover-main">
-    {% endif %}
-      <div class="navigation-wrapper hidden">{% include 'menu' %}</div>
-      {{ content }}
-    </main>
-
-    <script src="/js/interactions.js"></script>
-  </body>
+<script src="/js/interactions.js"></script>
+</body>
 </html>
