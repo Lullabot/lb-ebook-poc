@@ -14,7 +14,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-width: calc(100% - 81px);
+  min-width: calc(100% - 5rem);
   position: relative;
   height: 100vh;
   border-left: 1px solid #e0e6eb;
@@ -22,10 +22,11 @@ main {
 
 .cover-main {
   border-left: 0;
+  min-width: 100%;
 }
 
 .sidebar {
-  width: 80px;
+  width: 72px;
   height: 100vh;
   box-sizing: border-box;
   display: flex;
@@ -34,7 +35,7 @@ main {
 }
 .sidebar .navigation-btn {
   border-bottom: 1px solid #e0e6eb;
-  height: 80px;
+  height: 72px;
 }
 .sidebar .navigation-btn .hamburger-bg,
 .sidebar .navigation-btn .close-bg {
@@ -61,7 +62,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80px;
+  width: 72px;
 }
 .sidebar .page-title div {
   transform: rotate(-90deg);
@@ -99,8 +100,8 @@ main {
 .logo-container,
 .logo-container-cover {
   background-color: #f81e00;
-  height: 80px;
-  width: 80px;
+  height: 72px;
+  width: 72px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -125,12 +126,12 @@ main {
 }
 
 .page-number {
-  height: 80px;
-  width: 80px;
+  height: 72px;
+  width: 72px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "IBMPlexMono";
+  font-family: "IBMPlexMono", monospace;
   border-top: 1px solid #e0e6eb;
   font-size: 0.875rem;
   font-weight: 400;
@@ -163,6 +164,13 @@ main {
   color: #fff;
 }
 
+.cover-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
 .cover {
   background-color: #01070b;
   background-image: url("/img/Pattern - Dots.png");
@@ -170,7 +178,11 @@ main {
   background-position: center right;
   background-repeat: no-repeat;
   color: #fff;
-  padding: 7em;
+  padding: 4.5rem 13.5rem;
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .cover > p {
   text-transform: uppercase;
@@ -181,11 +193,24 @@ main {
   font-size: 6.5rem;
   line-height: 112px;
   font-weight: 700;
+  margin: 1rem 0;
 }
 
-div.get-started {
-  float: right;
+.cover-copy {
+  background-color: #fff;
+  color: #01070b;
+  padding: 4.5rem 4.5rem 4.5rem 13.5rem;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4.5rem;
 }
+.cover-copy p {
+  max-width: 42rem;
+  line-height: 2rem;
+}
+
 div.get-started a {
   text-decoration: none;
   color: #01070b;
@@ -202,6 +227,7 @@ div.get-started a {
   transition-property: background-color, box-shadow;
   transition-duration: 0.25s;
   position: relative;
+  text-wrap: nowrap;
 }
 div.get-started a::before {
   content: "";
@@ -231,16 +257,8 @@ div.get-started .gs-arrow-right {
   height: 16px;
 }
 
-.cover-copy {
-  background-color: #fff;
-  color: #01070b;
-  padding: 7em;
-  font-size: 1.25rem;
-}
-
 .toc-container {
-  padding: 4em;
-  padding-top: 10em;
+  padding: 10em 4em 4em;
   text-align: left;
 }
 .toc-container > p {
@@ -347,14 +365,21 @@ p .title {
 }
 @media (width <= 768px) {
   .cover {
-    padding: 5%;
-    padding-top: 7em;
+    padding: 6.5rem 1.5rem 1.5rem;
+    background-position: 16rem center;
   }
   .cover h1 {
     font-size: 2rem;
+    line-height: 2.5rem;
   }
   .cover-copy {
-    padding: 5%;
+    padding: 2rem;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+  }
+  .cover-copy p {
+    margin: 0 auto 2rem;
   }
   .toc-container {
     padding: 2em;
@@ -368,7 +393,7 @@ p .title {
     flex-direction: column;
   }
   .sidebar {
-    height: 80px;
+    height: 72px;
     width: auto;
     flex-direction: row;
   }
