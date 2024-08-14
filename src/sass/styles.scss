@@ -364,6 +364,10 @@ p {
   display: flex;
   height: 100%;
 
+  .ebook-heading-container {
+    overflow: auto;
+  }
+
   div {
     padding: 5%;
   }
@@ -479,6 +483,7 @@ p {
 
     .ebook-heading-container {
       order: 2;
+      overflow: unset;
     }
 
     .ebook-image {
