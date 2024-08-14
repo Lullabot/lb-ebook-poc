@@ -16,7 +16,7 @@ module.exports = function (eleventyConfig) {
           const numB = parseInt(b.fileSlug.replace('chapter-', ''), 10);
           return numA - numB;
         });
-      
+
       return {
         book: {
           ...book.data,
@@ -62,6 +62,8 @@ module.exports = function (eleventyConfig) {
 
     return `<img src="${data.url}" width="${width}" height="${height}" alt="${alt}" loading="lazy" decoding="async">`;
   });
+
+  eleventyConfig.setQuietMode(true);
 
   return {
     dir: {
