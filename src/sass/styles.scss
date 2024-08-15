@@ -405,9 +405,9 @@ p {
     display: flex;
     align-items: center;
     padding: 2em;
+    max-width: 586px;
 
     img {
-      max-width: 586px;
       overflow: auto;
     }
   }
