@@ -9,7 +9,7 @@
     "build:sass": "sass src/sass:_site/css",
     "watch:eleventy": "npx @11ty/eleventy --serve",
     "build:eleventy": "npx @11ty/eleventy",
-    "start": "rm -rf _site && npm-run-all build:sass --parallel watch:*",
+    "start": "rm -rf _site && node devMsg.js && npm-run-all build:sass --parallel watch:*",
     "build": "npm-run-all build:* && echo 'ebooks.lullabot.com' > ./_site/CNAME"
   },
   "author": "Hunter MacDermut",
@@ -21,6 +21,7 @@
     "sass": "^1.75.0"
   },
   "dependencies": {
+    "print-message": "^3.0.1",
     "sharp": "^0.33.4"
   }
 }
