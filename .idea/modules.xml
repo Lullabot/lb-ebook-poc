@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/lb-ebook-poc.iml" filepath="$PROJECT_DIR$/.idea/lb-ebook-poc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../module-developer-guide-demo-site/.idea/module-developer-guide-demo-site.iml" filepath="$PROJECT_DIR$/../module-developer-guide-demo-site/.idea/module-developer-guide-demo-site.iml" />
+    </modules>
+  </component>
+</project>
