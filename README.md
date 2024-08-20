@@ -81,6 +81,14 @@ The build script performs the following tasks:
 
 There is then an Action as part of the workflow that publishes the built site to GitHub Pages.
 
+## QA
+
+The main path for the ebooks mini-site, `ebooks.lullabot.com`, redirects to the main Lullabot site by default. In order to reach an actual ebook, the pattern is:
+
+`ebooks.lullabot.com/ebooks/` + any book title from https://github.com/Lullabot/lb-ebook-poc/tree/main/src/ebooks + `/cover`
+
+e.g. https://ebooks.lullabot.com/ebooks/large-team-challenges/cover/
+
 ## License
 
 This project is licensed under the ISC License. See the [LICENSE](LICENSE) file for details.
