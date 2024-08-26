@@ -1,4 +1,5 @@
 $lb-black: #01070b;
+$lb-black-50: #f4f5f6;
 $lb-red: #f81e00;
 $lb-gray: #e0e6eb;
 $lb-ocean: #869EAE;
@@ -92,7 +93,7 @@ main {
   z-index: 1;
 
   .toc-container {
-    padding: 1em;
+    padding: 5rem 0;
     background-color: $lb-white;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-left: 1px solid $lb-gray;
@@ -104,10 +105,43 @@ main {
     .chapter-item {
       font-size: 1em;
       font-weight: 400;
+      padding: 0.75rem 3rem 0.75rem 2.5rem;
+      gap: 1rem;
+      border-left: 0.5rem solid $lb-white;
+
+      &:hover {
+        background-color: $lb-black-50;
+        border-left-color: $lb-red;
+
+        a {
+          text-decoration: underline;
+        }
+      }
     }
 
     .resources-link {
       text-transform: none;
+    }
+  }
+}
+
+.toc-container-page {
+  #toc-title {
+    margin-bottom: 2em;
+    padding-left: 0;
+  }
+
+  .chapter-item {
+    margin-bottom: 2em;
+
+    .chapter-count {
+      margin-right: 1em;
+    }
+
+    a {
+      &:hover {
+        color: $lb-red;
+      }
     }
   }
 }
@@ -294,13 +328,13 @@ div.get-started {
 
   > p {
     text-transform: uppercase;
-    margin-bottom: 2em;
     font-size: 1rem;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.1em;
     text-align: left;
     color: #445A6A;
+    padding: 0 3rem;
   }
 
   .toc-columns {
@@ -316,30 +350,31 @@ div.get-started {
   .chapter-item {
     font-size: 1.25rem;
     font-weight: 700;
-    margin-bottom: 2em;
     color: $lb-black;
     display: flex;
     align-items: flex-start;
 
     .chapter-count {
       color: $lb-red;
-      margin-right: 1em;
       flex-shrink: 0;
+      height: 2rem;
+      width: 2rem;
+      background-color: $lb-white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     a {
       text-decoration: none;
       color: inherit;
-
-      &:hover {
-        color: $lb-red;
-      }
     }
 
     // Ensure the text after the number is indented correctly
     .chapter-title-wrapper {
       display: flex;
       flex-direction: column;
+      padding-top: 0.25rem;
     }
   }
 }

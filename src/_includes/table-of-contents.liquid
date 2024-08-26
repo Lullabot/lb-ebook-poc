@@ -3,7 +3,7 @@ layout: layout
 title: "Table of Contents"
 ---
 
-<nav class="toc-container" aria-labelledby="toc-title">
+<nav class="toc-container toc-container-page" aria-labelledby="toc-title">
   <p id="toc-title">{{ title }}</p>
   <div class="toc-columns">
     {% assign currentBookSlug = page.filePathStem | split: "/" | slice: 2, 1 | join: "" %}
