@@ -245,6 +245,8 @@ main {
 }
 
 div.get-started {
+  padding-left: 1rem;
+
   a {
     text-decoration: none;
     color: $lb-black;
@@ -314,6 +316,7 @@ div.get-started {
   .toc-columns {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 3rem;
   }
 
   .toc-column {

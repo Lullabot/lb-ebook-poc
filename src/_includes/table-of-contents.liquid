@@ -42,6 +42,11 @@ title: "Table of Contents"
       {% endif %}
     {% endfor %}
   </div>
+  {% for bookWithChapters in collections.booksWithChapters %}
+    {% if bookWithChapters.book.slug == currentBookSlug %}
+      {% include 'get-started', title: bookWithChapters.book.title %}
+    {% endif %}
+  {% endfor %}
 </nav>
 
 <nav class="nav-container" aria-label="E-book arrow navigation">
