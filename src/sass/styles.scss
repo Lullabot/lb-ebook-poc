@@ -110,38 +110,12 @@ main {
       border-left: 0.5rem solid $lb-white;
 
       &:hover {
-        background-color: $lb-black-50;
         border-left-color: $lb-red;
-
-        a {
-          text-decoration: underline;
-        }
       }
     }
 
     .resources-link {
       text-transform: none;
-    }
-  }
-}
-
-.toc-container-page {
-  #toc-title {
-    margin-bottom: 2em;
-    padding-left: 0;
-  }
-
-  .chapter-item {
-    margin-bottom: 2em;
-
-    .chapter-count {
-      margin-right: 1em;
-    }
-
-    a {
-      &:hover {
-        color: $lb-red;
-      }
     }
   }
 }
@@ -344,7 +318,6 @@ div.get-started {
 
   .toc-column {
     flex: 1;
-    max-width: 45%;
   }
 
   .chapter-item {
@@ -376,6 +349,41 @@ div.get-started {
       flex-direction: column;
       padding-top: 0.25rem;
     }
+
+    &:hover {
+      background-color: $lb-black-50;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.toc-container-page {
+  #toc-title {
+    margin-bottom: 3em;
+    padding-left: 1rem;
+    font-weight: unset;
+  }
+
+  .chapter-item {
+    font-weight: unset;
+    font-size: 1.5rem;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 0.5rem;
+
+    &:hover {
+      .chapter-count {
+        background-color: $lb-black-50;
+      }
+    }
+
+    .chapter-title-wrapper {
+      padding-top: 0.125rem;
+    }
+
   }
 }
 
@@ -477,6 +485,10 @@ p {
 
   .toc-container {
     padding: 2em;
+
+    .toc-columns {
+      flex-direction: column;
+    }
 
     .toc-column {
       max-width: unset;
