@@ -11,7 +11,7 @@
 </head>
 <body>
 {% if page.fileSlug != 'cover' %}
-  {% include 'sidebar' %}
+  {% include 'sidebar', title: title %}
   <main>{% include 'menu' %}{{ content }}</main>
 {% else %}
   <main class="cover-main">

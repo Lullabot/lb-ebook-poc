@@ -1,4 +1,5 @@
 $lb-black: #01070b;
+$lb-black-50: #f4f5f6;
 $lb-red: #f81e00;
 $lb-gray: #e0e6eb;
 $lb-ocean: #869EAE;
@@ -94,9 +95,9 @@ main {
   height: 100%;
 
   .toc-container {
-    padding: 1em;
+    padding: 5rem 0;
     background-color: $lb-white;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     border-left: 1px solid $lb-gray;
     overflow: auto;
 
@@ -107,6 +108,13 @@ main {
     .chapter-item {
       font-size: 1em;
       font-weight: 400;
+      padding: 0.75rem 3rem 0.75rem 2.5rem;
+      gap: 1rem;
+      border-left: 0.5rem solid $lb-white;
+
+      &:hover {
+        border-left-color: $lb-red;
+      }
     }
 
     .resources-link {
@@ -240,6 +248,8 @@ main {
 }
 
 div.get-started {
+  padding-left: 1rem;
+
   a {
     text-decoration: none;
     color: $lb-black;
@@ -297,53 +307,89 @@ div.get-started {
 
   > p {
     text-transform: uppercase;
-    margin-bottom: 2em;
     font-size: 1rem;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.1em;
     text-align: left;
     color: #445A6A;
+    padding: 0 3rem;
   }
 
   .toc-columns {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 3rem;
   }
 
   .toc-column {
     flex: 1;
-    max-width: 45%;
   }
 
   .chapter-item {
     font-size: 1.25rem;
     font-weight: 700;
-    margin-bottom: 2em;
     color: $lb-black;
     display: flex;
     align-items: flex-start;
 
     .chapter-count {
       color: $lb-red;
-      margin-right: 1em;
       flex-shrink: 0;
+      height: 2rem;
+      width: 2rem;
+      background-color: $lb-white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     a {
       text-decoration: none;
       color: inherit;
-
-      &:hover {
-        color: $lb-red;
-      }
     }
 
     // Ensure the text after the number is indented correctly
     .chapter-title-wrapper {
       display: flex;
       flex-direction: column;
+      padding-top: 0.25rem;
     }
+
+    &:hover {
+      background-color: $lb-black-50;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.toc-container-page {
+  #toc-title {
+    margin-bottom: 3em;
+    padding-left: 1rem;
+    font-weight: unset;
+  }
+
+  .chapter-item {
+    font-weight: unset;
+    font-size: 1.5rem;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 0.5rem;
+
+    &:hover {
+      .chapter-count {
+        background-color: $lb-black-50;
+      }
+    }
+
+    .chapter-title-wrapper {
+      padding-top: 0.125rem;
+    }
+
   }
 }
 
@@ -445,6 +491,10 @@ p {
 
   .toc-container {
     padding: 2em;
+
+    .toc-columns {
+      flex-direction: column;
+    }
 
     .toc-column {
       max-width: unset;
