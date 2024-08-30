@@ -1,6 +1,7 @@
 $lb-black: #01070b;
 $lb-black-50: #f4f5f6;
-$lb-red: #f81e00;
+$lb-red-800: #f81e00;
+$lb-red-900: #cf1900;
 $lb-gray: #e0e6eb;
 $lb-ocean: #869EAE;
 $lb-white: #fff;
@@ -113,7 +114,7 @@ main {
       border-left: 0.5rem solid $lb-white;
 
       &:hover {
-        border-left-color: $lb-red;
+        border-left-color: $lb-red-800;
       }
     }
 
@@ -129,7 +130,7 @@ main {
 
 .logo-container,
 .logo-container-cover {
-  background-color: $lb-red;
+  background-color: $lb-red-800;
   height: 72px;
   width: 72px;
   display: flex;
@@ -147,7 +148,7 @@ main {
 }
 
 .logo-container svg rect {
-  fill: $lb-red;
+  fill: $lb-red-800;
   transition: fill 0.3s ease;
 }
 
@@ -259,7 +260,7 @@ div.get-started {
     line-height: 16px;
     letter-spacing: 1.4px;
     z-index: 0;
-    border: 1.5px solid $lb-red;
+    border: 1.5px solid $lb-red-800;
     align-items: center;
     display: inline-flex;
     padding: 1rem 2rem;
@@ -274,7 +275,7 @@ div.get-started {
     width: 0;
     transition: width .25s;
     height: 100%;
-    background-color: $lb-red;
+    background-color: $lb-red-800;
     top: 0;
     left: 0;
     position: absolute;
@@ -282,7 +283,7 @@ div.get-started {
   }
 
   a:hover {
-    background-color: $lb-red;
+    background-color: $lb-red-800;
     color: $lb-white;
   }
 
@@ -334,7 +335,7 @@ div.get-started {
     align-items: flex-start;
 
     .chapter-count {
-      color: $lb-red;
+      color: $lb-red-900;
       flex-shrink: 0;
       height: 2rem;
       width: 2rem;
@@ -342,6 +343,7 @@ div.get-started {
       display: flex;
       align-items: center;
       justify-content: center;
+      font-weight: 400;
     }
 
     a {
@@ -398,7 +400,7 @@ p {
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 2em;
-    color: $lb-red;
+    color: $lb-red-800;
   }
 
   .title {
@@ -426,8 +428,9 @@ p {
 
     .ebook-chapter-number {
       text-transform: uppercase;
-      color: $lb-red;
-      font-weight: 700;
+      color: $lb-red-900;
+      letter-spacing: 0.1em;
+      font-weight: 500;
     }
 
     .ebook-chapter-title {
