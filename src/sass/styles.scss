@@ -41,6 +41,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: 0 0 1.5em 0 rgba(0, 0, 0, 0.03),
+              0 0 4.5em 0 rgba(0, 0, 0, 0.03);
 
   .navigation-btn {
     border-bottom: 1px solid $lb-gray;
@@ -98,8 +100,9 @@ main {
   .toc-container {
     padding: 5rem 0;
     background-color: $lb-white;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    border-left: 1px solid $lb-gray;
+    box-shadow: 0 0 1.5em 0 rgba(0, 0, 0, 0.06),
+                0 0 4.5em 0 rgba(0, 0, 0, 0.12);
+    clip-path: polygon(0 0, 200% 0, 200% 100%, 0% 100%);
     overflow: auto;
 
     .toc-column {
@@ -522,6 +525,14 @@ p {
         overflow: hidden;
         text-overflow: ellipsis;
       }
+    }
+  }
+
+  .navigation-wrapper {
+    top: -72px;
+
+    .toc-container {
+      clip-path: polygon(0 72px, 200% 72px, 200% 100%, 0% 100%);
     }
   }
 
