@@ -1,5 +1,5 @@
 ---
-title: 'Two: Not consulting the people who use the website most'
+title: 'Not consulting the people who use the website most'
 layout: chapter
 ---
 

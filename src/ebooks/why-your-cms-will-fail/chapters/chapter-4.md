@@ -1,5 +1,5 @@
 ---
-title: 'Three: User needs are neglected'
+title: 'User needs are neglected'
 layout: chapter
 ---
 

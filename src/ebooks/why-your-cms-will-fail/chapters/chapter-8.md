@@ -1,5 +1,5 @@
 ---
-title: 'Seven: Too much complexity'
+title: 'Too much complexity'
 layout: chapter
 ---
 

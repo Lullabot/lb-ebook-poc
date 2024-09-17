@@ -1,5 +1,5 @@
 ---
-title: 'One: A lack of stakeholder involvement'
+title: 'A lack of stakeholder involvement'
 layout: chapter
 ---
 

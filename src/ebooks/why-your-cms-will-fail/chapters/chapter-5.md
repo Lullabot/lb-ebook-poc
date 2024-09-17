@@ -1,5 +1,5 @@
 ---
-title: 'Four: The project has an unrealistic timeline'
+title: 'The project has an unrealistic timeline'
 layout: chapter
 ---
 

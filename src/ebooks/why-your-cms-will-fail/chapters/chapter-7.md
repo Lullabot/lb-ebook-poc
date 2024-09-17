@@ -1,11 +1,11 @@
 ---
-title: 'Five: Not knowing how to use the system'
+title: 'Thinking the project is “done”'
 layout: chapter
 ---
 
 
-You can do everything right, and your project can still derail after launch. If your authors and editors don’t know how to use the new CMS, it doesn’t matter if the project was delivered on time and under budget.
+A CMS project is never done. It is only closer to meeting your goals than it was previously. Not everything can be completed before launch. There are always bugs and new feature requests. Don’t forget about ongoing maintenance to keep all of the software up to date.
 
-Authors and editors must understand how the new CMS meets the needs they communicated earlier in the project. They’re also the ones who will be best at identifying bugs that need to be fixed and confusing language that needs clarification.
+If you present the new CMS as a finished product, as if you were delivering a pizza, then people will be frustrated and upset. A large portion of your people will think they got the wrong pizza or they were overcharged, and they won’t be wrong. Remember to set proper expectations and timelines and communicate them clearly. For example, “This feature won’t make it in before launch, but we plan on having it completed before the end of the quarter.”
 
-**Takeaway:** Make time for training, answering questions, and receiving ongoing feedback.
+**Takeaway:** Set proper expectations and communicate timelines with ALL stakeholders.

@@ -1,5 +1,5 @@
 ---
-title: 'Five: Not knowing how to use the system'
+title: 'Not knowing how to use the system'
 layout: chapter
 ---
 

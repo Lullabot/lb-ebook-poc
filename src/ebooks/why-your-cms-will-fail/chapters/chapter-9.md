@@ -1,5 +1,5 @@
 ---
-title: 'Eight: Hiring the wrong agency partner'
+title: 'Hiring the wrong agency partner'
 layout: chapter
 ---
 
