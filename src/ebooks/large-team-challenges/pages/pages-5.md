@@ -1,8 +1,8 @@
 ---
 title: Multiple copies of assets
-image: "chapter-5.png"
+image: "page-5.png"
 image-alt: "your alt text here"
-layout: chapter
+layout: page
 ---
 
 Editors often re-upload the same image over and over again, even though

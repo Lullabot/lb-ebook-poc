@@ -1,6 +1,6 @@
 ---
 title: Start identifying and addressing challenges early
-layout: chapter
+layout: page
 ---
 
 As you may have noticed, many of the solutions presented above are a whole

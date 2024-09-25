@@ -109,7 +109,7 @@ main {
       max-width: unset;
     }
 
-    .chapter-item {
+    .page-item {
       font-size: 1em;
       font-weight: 400;
       padding: 0.75rem 3rem 0.75rem 2.5rem;
@@ -330,14 +330,14 @@ div.get-started {
     flex: 1;
   }
 
-  .chapter-item {
+  .page-item {
     font-size: 1.25rem;
     font-weight: 700;
     color: $lb-black;
     display: flex;
     align-items: flex-start;
 
-    .chapter-count {
+    .page-count {
       color: $lb-red-900;
       flex-shrink: 0;
       height: 2rem;
@@ -355,7 +355,7 @@ div.get-started {
     }
 
     // Ensure the text after the number is indented correctly
-    .chapter-title-wrapper {
+    .page-title-wrapper {
       display: flex;
       flex-direction: column;
       padding-top: 0.25rem;
@@ -378,7 +378,7 @@ div.get-started {
     font-weight: unset;
   }
 
-  .chapter-item {
+  .page-item {
     font-weight: unset;
     font-size: 1.5rem;
     padding: 1rem;
@@ -386,12 +386,12 @@ div.get-started {
     border-radius: 0.5rem;
 
     &:hover {
-      .chapter-count {
+      .page-count {
         background-color: $lb-black-50;
       }
     }
 
-    .chapter-title-wrapper {
+    .page-title-wrapper {
       padding-top: 0.125rem;
     }
 
@@ -399,7 +399,7 @@ div.get-started {
 }
 
 p {
-  .chapter {
+  .page {
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 2em;
@@ -426,24 +426,24 @@ p {
     padding: 5%;
   }
 
-  .ebook-chapter-heading {
+  .ebook-page-heading {
     padding-bottom: 0;
 
-    .ebook-chapter-number {
+    .ebook-page-number {
       text-transform: uppercase;
       color: $lb-red-900;
       letter-spacing: 0.1em;
       font-weight: 500;
     }
 
-    .ebook-chapter-title {
+    .ebook-page-title {
       font-size: 1.75rem;
       font-weight: bold;
     }
   }
 
   .ebook-copy {
-    .ebook-chapter-title {
+    .ebook-page-title {
       font-size: 1.75rem;
       font-weight: bold;
     }

@@ -1,6 +1,6 @@
 ---
 title: Beer old five points 15-501
-layout: chapter
+layout: page
 ---
 
 

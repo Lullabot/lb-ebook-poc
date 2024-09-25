@@ -1,6 +1,6 @@
 ---
 title: "Only model what you need"
-layout: chapter
+layout: page
 ---
 During interviews and workshops, while mapping out the domain your business is a part of, you could find yourself structuring content that doesn’t need it. Since knowledge likes to be connected, this is easy to do.
 

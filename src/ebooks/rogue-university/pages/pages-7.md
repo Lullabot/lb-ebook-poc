@@ -2,7 +2,8 @@
 title: "Verify Conclusions"
 image: "content-types.png"
 image-alt: "Two differnt ways content types can be presented. The top is an early flowchart. The bottom is a page in the CMS."
-layout: chapter
+layout: page
+tags: [chapter]
 ---
 
 As you build out these solutions, you want to keep communication open with your internal users to verify the solutions are working well. There are three angles you want to approach from.

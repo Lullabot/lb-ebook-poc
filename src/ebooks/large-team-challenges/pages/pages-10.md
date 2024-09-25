@@ -1,6 +1,6 @@
 ---
 title: Best practices for complex websites with large content teams
-layout: chapter
+layout: page
 ---
 
 Besides specific solutions to specific challenges, there are also some best

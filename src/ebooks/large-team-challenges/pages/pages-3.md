@@ -1,6 +1,6 @@
 ---
 title: The biggest challenges
-layout: chapter
+layout: page
 ---
 
 When trying to solve these challenges, it’s essential to realize that

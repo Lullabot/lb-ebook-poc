@@ -2,7 +2,7 @@
 title: "Research"
 image: "Personas@2x.jpg"
 image-alt: "your alt text here"
-layout: chapter
+layout: page
 ---
 
 ### Research

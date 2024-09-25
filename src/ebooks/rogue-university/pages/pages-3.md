@@ -2,7 +2,7 @@
 title: "Three Types of Archipelagos"
 image: "illustration_centralized-vs-decentralized@2x.png"
 image-alt: "your alt text here"
-layout: chapter
+layout: page
 ---
 
 Not every archipelago suffers from this “all carrot, no stick” problem. There are three types of governance models we have identified.

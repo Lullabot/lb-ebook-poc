@@ -1,6 +1,6 @@
 ---
 title: What is "large?"
-layout: chapter
+layout: page
 ---
 
 It depends. The threshold will be different based on the complexity of the website, how much work needs to be done, and how your team is organized. For example, you can have lots of non-technical staff writing content, but if all content is funneled through a single content admin to get it into the CMS, that wouldn’t necessarily qualify as large. This scenario may present a bottleneck, but if friction occurs due to your team’s size, it won’t affect the website since most of your writers don’t touch it. Instead, your problems will most likely be process or cultural challenges.
