@@ -22,11 +22,13 @@ module.exports = function (eleventyConfig) {
           ...book.data,
           slug: bookSlug,
         },
-        pagess: bookpages.map((page, index) => ({
+        pages: bookPages.map((page, index) => ({
+          ...page.data,  // Include all frontmatter data
           title: page.data.title,
           url: page.url,
           filePathStem: page.filePathStem,
           inputPath: page.inputPath,
+          tags: page.data.tags || [],  // Ensure tags is always an array
           index: index,
           previous: index > 0 ? bookPages[index - 1] : null,
           next: index < bookPages.length - 1 ? bookPages[index + 1] : null,
