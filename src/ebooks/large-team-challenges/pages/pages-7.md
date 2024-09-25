@@ -1,8 +1,8 @@
 ---
 title: "Workflow bottlenecks"
-image: "chapter-7.png"
+image: "page-7.png"
 image-alt: "your alt text here"
-layout: chapter
+layout: page
 ---
 How many gates does a piece of content need to pass through before it gets
 published? If there are not enough people with approval permissions, things

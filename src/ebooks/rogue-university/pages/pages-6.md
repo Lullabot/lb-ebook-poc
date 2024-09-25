@@ -1,6 +1,6 @@
 ---
 title: "Building Bridges (or Tunnels)"
-layout: chapter
+layout: page
 ---
 
 One of the biggest challenges we run into is the siloing of information in an organization. Problems aren’t surfaced. Solutions aren’t shared. There is no ubiquitous language to describe things, so confusion can abound even when different parts of an organization communicate. 

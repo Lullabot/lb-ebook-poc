@@ -2,7 +2,7 @@
 title: "The Magical Intersection of Success"
 image: "illustration_umbrella-subsidiaries-users_diagram.png"
 image-alt: "your alt text here"
-layout: chapter
+layout: page
 ---
 
 Your task is to find commonality among a group of subsidiaries with different use cases and different audiences, allowing them to work within the same system without excluding their unique aspects. Instead of final end-users, you focus on the people in the middle to find that magical intersection where all their needs can combine into one solution.

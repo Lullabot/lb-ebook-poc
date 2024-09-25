@@ -2,7 +2,7 @@
 title: "Collaborative workshops"
 image: "page_12_image_1.jpeg"
 image-alt: "your alt text here"
-layout: chapter
+layout: page
 ---
 A website is a shared resource with many people involved, so you need to work together when planning how to structure your content. Priorities will clash, and you need to get those out in the open. A shared vision is required.
 

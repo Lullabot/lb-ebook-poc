@@ -3,24 +3,24 @@ layout: layout
 ---
 
 {% assign currentBookSlug = page.filePathStem | split: "/" | slice: 2, 1 | join: "" %}
-{% assign bookWithChapters = collections.booksWithChapters | where: "book.slug", currentBookSlug | first %}
-{% assign chapter = bookWithChapters.chapters | where: "url", page.url | first %}
-{% assign previousChapter = chapter.previous %}
-{% assign nextChapter = chapter.next %}
-{% assign isFirstChapter = chapter.index == 0 %}
-{% assign isLastChapter = chapter.index == bookWithChapters.chapters.size | minus: 1 %}
+{% assign bookWithPages = collections.booksWithPages | where: "book.slug", currentBookSlug | first %}
+{% assign page = bookWithPages.pages | where: "url", page.url | first %}
+{% assign previousPage = page.previous %}
+{% assign nextPage = page.next %}
+{% assign isFirstPage = page.index == 0 %}
+{% assign isLastPage = page.index == bookWithPages.pages.size | minus: 1 %}
 
-{% assign chapterIndex = chapter.index | plus: 1 %}
-{% if chapterIndex < 10 %}
-  {% assign chapterIndex = "0" | append: chapterIndex %}
+{% assign pageIndex = page.index | plus: 1 %}
+{% if pageIndex < 10 %}
+  {% assign pageIndex = "0" | append: pageIndex %}
 {% endif %}
 
 
 <div class="ebook-page-container">
   <div class="ebook-heading-container">
-    <div class="ebook-chapter-heading">
-      <p class="ebook-chapter-number">Chapter {{ chapterIndex }}</p>
-      <p class="ebook-chapter-title">{{ title }} </p>
+    <div class="ebook-page-heading">
+      <p class="ebook-page-number">Page {{ pageIndex }}</p>
+      <p class="ebook-page-title">{{ title }} </p>
     </div>
     <div class="ebook-copy">
       <div class="copy-paragraph">{{ content }}</div>
@@ -35,15 +35,15 @@ layout: layout
 </div>
 
 <nav class="nav-container" aria-label="E-book arrow navigation">
-  {% if isFirstChapter %}
-    <a href="../../table-of-contents/" aria-label="Previous chapter">
+  {% if isFirstPage %}
+    <a href="../../table-of-contents/" aria-label="Previous page">
       <div class="nav-button">
         <i class="gg-arrow-left"></i>
       </div>
     </a>
   {% else %}
-    {% if previousChapter %}
-      <a href="{{ previousChapter.url }}" aria-label="Previous chapter">
+    {% if previousPage %}
+      <a href="{{ previousPage.url }}" aria-label="Previous page">
         <div class="nav-button">
           <i class="gg-arrow-left"></i>
         </div>
@@ -51,8 +51,8 @@ layout: layout
     {% endif %}
   {% endif %}
 
-  {% if nextChapter %}
-    <a href="{{ nextChapter.url }}" aria-label="Next chapter">
+  {% if nextPage %}
+    <a href="{{ nextPage.url }}" aria-label="Next page">
       <div class="nav-button">
         <i class="gg-arrow-right"></i>
       </div>

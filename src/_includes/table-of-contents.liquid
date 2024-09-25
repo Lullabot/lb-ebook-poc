@@ -8,17 +8,17 @@ title: "Table of Contents"
   <div class="toc-columns">
     {% assign currentBookSlug = page.filePathStem | split: "/" | slice: 2, 1 | join: "" %}
     {% assign count = 1 %}
-    {% for bookWithChapters in collections.booksWithChapters %}
-      {% if bookWithChapters.book.slug == currentBookSlug %}
-        {% assign totalChapters = bookWithChapters.chapters | size %}
-        {% assign itemsPerColumn = totalChapters | divided_by: 2 | ceil %}
+    {% for bookWithPages in collections.booksWithPages %}
+      {% if bookWithPages.book.slug == currentBookSlug %}
+        {% assign totalPages = bookWithPages.pages | size %}
+        {% assign itemsPerColumn = totalPages | divided_by: 2 | ceil %}
         <div class="toc-column">
-          {% for chapter in bookWithChapters.chapters %}
+          {% for page in bookWithPages.pages %}
             {% if count <= itemsPerColumn %}
-              <div class="chapter-item">
-                <span class="chapter-count">{% if count < 10 %}0{% endif %}{{ count }}</span>
-                <div class="chapter-title-wrapper">
-                  <a href="{{ chapter.url }}">{{ chapter.title }}</a>
+              <div class="page-item">
+                <span class="page-count">{% if count < 10 %}0{% endif %}{{ count }}</span>
+                <div class="page-title-wrapper">
+                  <a href="{{ page.url }}">{{ page.title }}</a>
                 </div>
               </div>
             {% endif %}
@@ -27,12 +27,12 @@ title: "Table of Contents"
         </div>
         {% assign count = 1 %}
         <div class="toc-column">
-          {% for chapter in bookWithChapters.chapters %}
+          {% for page in bookWithPages.pages %}
             {% if count > itemsPerColumn %}
-              <div class="chapter-item">
-                <span class="chapter-count">{% if count < 10 %}0{% endif %}{{ count }}</span>
-                <div class="chapter-title-wrapper">
-                  <a href="{{ chapter.url }}">{{ chapter.title }}</a>
+              <div class="page-item">
+                <span class="page-count">{% if count < 10 %}0{% endif %}{{ count }}</span>
+                <div class="page-title-wrapper">
+                  <a href="{{ page.url }}">{{ page.title }}</a>
                 </div>
               </div>
             {% endif %}
@@ -42,9 +42,9 @@ title: "Table of Contents"
       {% endif %}
     {% endfor %}
   </div>
-  {% for bookWithChapters in collections.booksWithChapters %}
-    {% if bookWithChapters.book.slug == currentBookSlug %}
-      {% include 'get-started', title: bookWithChapters.book.title %}
+  {% for bookWithPages in collections.booksWithPages %}
+    {% if bookWithPages.book.slug == currentBookSlug %}
+      {% include 'get-started', title: bookWithPages.book.title %}
     {% endif %}
   {% endfor %}
 </nav>
@@ -55,7 +55,7 @@ title: "Table of Contents"
       <i class="gg-arrow-left"></i>
     </div>
   </a>
-  <a href="../chapters/chapter-1" aria-label="Next page">
+  <a href="../pages/page-1" aria-label="Next page">
     <div class="nav-button">
       <i class="gg-arrow-right"></i>
     </div>

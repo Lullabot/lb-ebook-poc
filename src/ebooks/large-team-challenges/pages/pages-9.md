@@ -1,8 +1,8 @@
 ---
 title: Permissions that don’t match the requirements of your team
-image: "chapter-9.png"
+image: "page-9.png"
 image-alt: "your alt text here"
-layout: chapter
+layout: page
 ---
 
 Out of the box, Drupal comes with “edit mine” or “edit all” permissions

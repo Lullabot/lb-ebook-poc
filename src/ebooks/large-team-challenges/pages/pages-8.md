@@ -1,8 +1,8 @@
 ---
 title: Translation drift
-image: "chapter-8.png"
+image: "page-8.png"
 image-alt: "your alt text here"
-layout: chapter
+layout: page
 ---
 
 Once you add translations and internationalization to the mix, you add

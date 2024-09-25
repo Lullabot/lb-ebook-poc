@@ -3,15 +3,15 @@
     <p>Table of Contents</p>
     {% assign currentBookSlug = page.filePathStem | split: "/" | slice: 2, 1 | join: "" %}
     {% assign count = 1 %}
-    {% for bookWithChapters in collections.booksWithChapters %}
-      {% if bookWithChapters.book.slug == currentBookSlug %}
-        {% assign totalChapters = bookWithChapters.chapters | size %}
+    {% for bookWithPages in collections.booksWithPages %}
+      {% if bookWithPages.book.slug == currentBookSlug %}
+        {% assign totalPages = bookWithPages.pages | size %}
         <div class="toc-column">
-          {% for chapter in bookWithChapters.chapters %}
-            <div class="chapter-item">
-              <span class="chapter-count">{% if count < 10 %}0{% endif %}{{ count }}</span>
-              <div class="chapter-title-wrapper">
-                <a href="{{ chapter.url }}">{{ chapter.title }}</a>
+          {% for page in bookWithPages.pages %}
+            <div class="page-item">
+              <span class="page-count">{% if count < 10 %}0{% endif %}{{ count }}</span>
+              <div class="page-title-wrapper">
+                <a href="{{ page.url }}">{{ page.title }}</a>
               </div>
             </div>
             {% assign count = count | plus: 1 %}

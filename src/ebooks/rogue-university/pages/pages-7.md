@@ -1,6 +1,6 @@
 ---
 title: "Verify Conclusions"
-layout: chapter
+layout: page
 ---
 
 As you build out these solutions, you want to keep communication open with your internal users to verify the solutions are working well. There are three angles you want to approach from.

@@ -1,8 +1,8 @@
 ---
 title: Multiple people editing the same piece of content
-image: "chapter-4.png"
+image: "page-4.png"
 image-alt: "your alt text here"
-layout: chapter
+layout: page
 ---
 With idioms like “too many cooks in the kitchen,” this problem has clearly reared its ugly head for generations, even before the idea of websites was ever imagined. Now the kitchen is virtual.
 

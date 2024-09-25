@@ -2,18 +2,18 @@ const Image = require("@11ty/eleventy-img");
 const path = require("path");
 
 module.exports = function (eleventyConfig) {
-  // Generate a collection of all books with their chapters
-  eleventyConfig.addCollection("booksWithChapters", function (collectionApi) {
+  // Generate a collection of all books with their pages
+  eleventyConfig.addCollection("booksWithPages", function (collectionApi) {
     const books = collectionApi.getFilteredByGlob("src/ebooks/*/cover.md");
-    const chapters = collectionApi.getFilteredByGlob("src/ebooks/*/chapters/*.md");
+    const pages = collectionApi.getFilteredByGlob("src/ebooks/*/pages/*.md");
 
     return books.map(book => {
       const bookSlug = book.filePathStem.split("/")[2];
-      const bookChapters = chapters
-        .filter(chapter => chapter.inputPath.includes(bookSlug))
+      const bookPages = pages
+        .filter(page => page.inputPath.includes(bookSlug))
         .sort((a, b) => {
-          const numA = parseInt(a.fileSlug.replace('chapter-', ''), 10);
-          const numB = parseInt(b.fileSlug.replace('chapter-', ''), 10);
+          const numA = parseInt(a.fileSlug.replace('page-', ''), 10);
+          const numB = parseInt(b.fileSlug.replace('page-', ''), 10);
           return numA - numB;
         });
 
@@ -22,14 +22,14 @@ module.exports = function (eleventyConfig) {
           ...book.data,
           slug: bookSlug,
         },
-        chapters: bookChapters.map((chapter, index) => ({
-          title: chapter.data.title,
-          url: chapter.url,
-          filePathStem: chapter.filePathStem,
-          inputPath: chapter.inputPath,
+        pagess: bookpages.map((page, index) => ({
+          title: page.data.title,
+          url: page.url,
+          filePathStem: page.filePathStem,
+          inputPath: page.inputPath,
           index: index,
-          previous: index > 0 ? bookChapters[index - 1] : null,
-          next: index < bookChapters.length - 1 ? bookChapters[index + 1] : null,
+          previous: index > 0 ? bookPages[index - 1] : null,
+          next: index < bookPages.length - 1 ? bookPages[index + 1] : null,
         }))
       };
     });

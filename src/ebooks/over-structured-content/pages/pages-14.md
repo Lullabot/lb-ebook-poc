@@ -1,6 +1,6 @@
 ---
 title: "Conclusion"
-layout: chapter
+layout: page
 ---
 Usually, structuring your content in the first place is the hard part. Lots of organizations struggle to get stakeholder buy-in or have problems implementing such an initiative in their CMS. If you’ve overcome these obstacles, congratulations. But watch out for the signs. Don’t get overzealous in structuring your content.
 
