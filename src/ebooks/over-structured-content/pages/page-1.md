@@ -1,6 +1,7 @@
 ---
 title: "Introduction"
 layout: page
+tags: [chapter]
 ---
 
 You’ve spent time and money structuring and organizing your content. Everything now has its place, is connected, and your content is ready to assemble and display wherever your audience is. And having reusable, sortable, consistent, and findable content that’s easier to maintain excites your organization.
