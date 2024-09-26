@@ -1,6 +1,7 @@
 ---
 title: "How to Avoid Over-structuring Your Content"
 layout: page
+tags: [chapter]
 ---
 You need an appropriate content model, which is an early draft of how content will be structured with its attributes and shared relationships.
 
