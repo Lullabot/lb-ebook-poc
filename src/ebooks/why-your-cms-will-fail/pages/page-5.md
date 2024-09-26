@@ -2,7 +2,8 @@
 title: 'The project has an unrealistic timeline'
 image: "chapter-5.png"
 image-alt: "A calendar showing a due date."
-layout: chapter
+layout: page
+tags: [chapter]
 ---
 
 
