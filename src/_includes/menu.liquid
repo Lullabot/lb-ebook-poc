@@ -17,29 +17,15 @@
         {% assign itemsPerColumn = totalPagesWithTags | divided_by: 2 | ceil %}
         <div class="toc-column">
           {% for page in bookWithPages.pages %}
-            {% if page.tags contains "chapter" and count <= itemsPerColumn %}
+            {% if page.tags contains "chapter" %}
               <div class="page-item">
                 <span class="page-count">{% if count < 10 %}0{% endif %}{{ count }}</span>
                 <div class="page-title-wrapper">
                   <a href="{{ page.url }}">{{ page.title }}</a>
                 </div>
               </div>
+              {% assign count = count | plus: 1 %}
             {% endif %}
-            {% assign count = count | plus: 1 %}
-          {% endfor %}
-        </div>
-        {% assign count = 1 %}
-        <div class="toc-column">
-          {% for page in bookWithPages.pages %}
-            {% if page.tags contains "chapter" and count > itemsPerColumn %}
-              <div class="page-item">
-                <span class="page-count">{% if count < 10 %}0{% endif %}{{ count }}</span>
-                <div class="page-title-wrapper">
-                  <a href="{{ page.url }}">{{ page.title }}</a>
-                </div>
-              </div>
-            {% endif %}
-            {% assign count = count | plus: 1 %}
           {% endfor %}
         </div>
       {% endif %}
