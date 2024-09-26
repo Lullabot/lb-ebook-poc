@@ -1,7 +1,7 @@
 ---
 title: Introduction
 image: "chapter-1.png"
-image-alt: "your alt text here"
+image-alt: "A person struggling to climb out of a mess of web components."
 layout: chapter
 ---
 

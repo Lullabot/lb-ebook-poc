@@ -1,5 +1,7 @@
 ---
 title: 'Too much complexity'
+image: "chapter-8.png"
+image-alt: "A chaotic display of windows, arrays and buttons."
 layout: chapter
 ---
 

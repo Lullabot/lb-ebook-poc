@@ -1,5 +1,7 @@
 ---
 title: 'Not consulting the people who use the website most'
+image: "chapter-3.png"
+image-alt: "A person getting angry at something on his laptop."
 layout: chapter
 ---
 

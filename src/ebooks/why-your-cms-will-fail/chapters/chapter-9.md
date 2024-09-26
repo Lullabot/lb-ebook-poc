@@ -1,5 +1,7 @@
 ---
 title: 'Hiring the wrong agency partner'
+image: "chapter-9.png"
+image-alt: "Two people talking across a small table, taking notes on laptops."
 layout: chapter
 ---
 

@@ -1,5 +1,7 @@
 ---
 title: 'Thinking the project is “done”'
+image: "chapter-7.png"
+image-alt: "A pizza delivery person delivering a website to someone who is less than pleased."
 layout: chapter
 ---
 

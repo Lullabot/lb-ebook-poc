@@ -1,5 +1,7 @@
 ---
 title: 'User needs are neglected'
+image: "chapter-4.png"
+image-alt: "A person staring in confusion at a stack of web components."
 layout: chapter
 ---
 

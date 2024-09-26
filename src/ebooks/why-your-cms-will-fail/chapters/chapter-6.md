@@ -1,5 +1,7 @@
 ---
-title: 'Not knowing how to use the system'
+title: "Authors don't know how to use the system"
+image: "chapter-5.png"
+image-alt: "A person standing in front of some web components, reading an instruction sheet that is too long, looking confused."
 layout: chapter
 ---
 

@@ -1,5 +1,7 @@
 ---
 title: 'A lack of stakeholder involvement'
+image: "chapter-2.png"
+image-alt: "A stack of coins, a signed contract, and a clock with cobwebs on it."
 layout: chapter
 ---
 
