@@ -6,14 +6,39 @@
     {% for bookWithPages in collections.booksWithPages %}
       {% if bookWithPages.book.slug == currentBookSlug %}
         {% assign totalPages = bookWithPages.pages | size %}
+        
+        {% assign totalPagesWithTags = 0 %}
+        {% for page in bookWithPages.pages %}
+          {% if page.tags contains "chapter" %}
+            {% assign totalPagesWithTags = totalPagesWithTags | plus: 1 %}
+          {% endif %}
+        {% endfor %}
+        
+        {% assign itemsPerColumn = totalPagesWithTags | divided_by: 2 | ceil %}
         <div class="toc-column">
           {% for page in bookWithPages.pages %}
-            <div class="page-item">
-              <span class="page-count">{% if count < 10 %}0{% endif %}{{ count }}</span>
-              <div class="page-title-wrapper">
-                <a href="{{ page.url }}">{{ page.title }}</a>
+            {% if page.tags contains "chapter" and count <= itemsPerColumn %}
+              <div class="page-item">
+                <span class="page-count">{% if count < 10 %}0{% endif %}{{ count }}</span>
+                <div class="page-title-wrapper">
+                  <a href="{{ page.url }}">{{ page.title }}</a>
+                </div>
               </div>
-            </div>
+            {% endif %}
+            {% assign count = count | plus: 1 %}
+          {% endfor %}
+        </div>
+        {% assign count = 1 %}
+        <div class="toc-column">
+          {% for page in bookWithPages.pages %}
+            {% if page.tags contains "chapter" and count > itemsPerColumn %}
+              <div class="page-item">
+                <span class="page-count">{% if count < 10 %}0{% endif %}{{ count }}</span>
+                <div class="page-title-wrapper">
+                  <a href="{{ page.url }}">{{ page.title }}</a>
+                </div>
+              </div>
+            {% endif %}
             {% assign count = count | plus: 1 %}
           {% endfor %}
         </div>
