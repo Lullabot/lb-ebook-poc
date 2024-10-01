@@ -11,9 +11,9 @@ title: "Books by Lullabots"
 
   <div class="cover-copy">
     <ul>
-      {% for bookWithChapters in collections.booksWithChapters %}
+      {% for bookWithPages in collections.booksWithPages %}
         <li>
-          <h2><a href="/ebooks/{{ bookWithChapters.book.slug }}/cover">{{ bookWithChapters.book.title }}</a></h2>
+          <h2><a href="/ebooks/{{ bookWithPages.book.slug }}/cover">{{ bookWithPages.book.title }}</a></h2>
         </li>
       {% endfor %}
     </ul>

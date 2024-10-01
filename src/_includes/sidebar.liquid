@@ -8,11 +8,11 @@
   {% endif %}
 
   {% assign currentBookSlug = page.filePathStem | split: "/" | slice: 2, 1 | join: "" %}
-  {% for bookWithChapters in collections.booksWithChapters %}
-    {% if bookWithChapters.book.slug == currentBookSlug %}
+  {% for bookWithPages in collections.booksWithPages %}
+    {% if bookWithPages.book.slug == currentBookSlug %}
 
       <div class="page-title">
-        <div>{{ bookWithChapters.book.title }}</div>
+        <div>{{ bookWithPages.book.title }}</div>
       </div>
       <div class="page-number">
         <div aria-label="Current page number">
@@ -20,7 +20,7 @@
           {% if page.fileSlug == 'table-of-contents' %}
             TOC
           {% else %}
-            {{ page.fileSlug | replace: 'chapter-', '' }}
+            {{ page.fileSlug | replace: 'page-', '' }}
           {% endif %}
         </div>
       </div>
