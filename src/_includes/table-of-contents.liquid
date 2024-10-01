@@ -2,7 +2,7 @@
 layout: layout
 title: "Table of Contents"
 ---
-
+  
 <nav class="toc-container toc-container-page" aria-labelledby="toc-title">
   <p id="toc-title">{{ title }}</p>
   <div class="toc-columns">
@@ -47,18 +47,11 @@ title: "Table of Contents"
     {% endfor %}
   </div>
   {% include 'get-started', title: bookWithPages.book.title %}
-  
-  <nav class="nav-container" aria-label="E-book arrow navigation">
-    <a href="../cover/" aria-label="Previous page">
-      <div class="nav-button">
-        <i class="gg-arrow-left"></i>
-      </div>
-    </a>
-    <a href="../pages/page-1" aria-label="Next page">
-      <div class="nav-button">
-        <i class="gg-arrow-right"></i>
-      </div>
-    </a>
-  </nav>
+
+  {% assign bookWithPages = collections.booksWithPages | where: "book.slug", currentBookSlug | first %}
+  {% assign page = bookWithPages.pages | first %}
+  {% assign nextPage = page.next %}
+
+  {% include 'pagination.liquid' %}
 </nav>
 
