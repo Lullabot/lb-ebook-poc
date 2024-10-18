@@ -1,13 +1,25 @@
-<div class="nav-container">
-  {% if pagination.href.previous %}
-    <div class="nav-button">
-      <a href="{{ pagination.href.previous }}"><i class="gg-arrow-left"></i></a>
-    </div>
+<nav class="nav-container" aria-label="E-book arrow navigation">
+  {% if isFirstPage %}
+    <a href="../../table-of-contents/" aria-label="Previous page">
+      <div class="nav-button">
+        <i class="gg-arrow-left"></i>
+      </div>
+    </a>
+  {% else %}
+    {% if previousPage %}
+      <a href="{{ previousPage.url }}" aria-label="Previous page">
+        <div class="nav-button">
+          <i class="gg-arrow-left"></i>
+        </div>
+      </a>
+    {% endif %}
   {% endif %}
 
-  {% if pagination.href.next %}
-    <div class="nav-button">
-      <a href="{{ pagination.href.next }}"><i class="gg-arrow-right"></i></a>
-    </div>
+  {% if nextPage %}
+    <a href="{{ nextPage.url }}" aria-label="Next page">
+      <div class="nav-button">
+        <i class="gg-arrow-right"></i>
+      </div>
+    </a>
   {% endif %}
-</div>
+</nav>
