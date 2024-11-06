@@ -16,7 +16,7 @@ At this point, you’ve likely already identified people you want to run through
 
 ### Present Information in Multiple Forms
 
-Different contexts can help trigger different responses to information. For example, a list of content types on paper is read differently than that same list on a CMS edit screen, which is read differently than how the page will render for the end-user.
+Different contexts can trigger different responses to information. For example, a list of content types on paper is read differently than that same list on a CMS edit screen, which is read differently than how the page will render for the end-user.
 
 The image shows two ways we presented content types to users during different phases of a project.
 
