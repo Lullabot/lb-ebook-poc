@@ -1,6 +1,6 @@
 ---
 layout: cover
-slug: "rogue-university"
-title: "How to Keep Your University’s Websites from Going Rogue"
+slug: "keeping-government-consistent"
+title: "Keeping State Government Websites Consistent and Accessible: Challenges and Solutions"
 ---
 Maintaining Consistent Standards in a Decentralized Organization.
