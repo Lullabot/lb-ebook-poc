@@ -1,6 +1,7 @@
 ---
 title: Consider having content specialists AND content editors
 layout: page
+tags: [chapter]
 ---
 
 The content needs of organizations have become more complex over time,

@@ -1,8 +1,9 @@
 ---
-title: Permissions that don’t match the requirements of your team
+title: Permissions that don't match the requirements of your team
 image: "page-9.png"
 image-alt: "your alt text here"
 layout: page
+tags: [chapter]
 ---
 
 Out of the box, Drupal comes with “edit mine” or “edit all” permissions

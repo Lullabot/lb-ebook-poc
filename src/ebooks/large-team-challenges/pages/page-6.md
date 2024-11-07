@@ -3,6 +3,7 @@ title: Editors who use the website infrequently
 image: "page-6.png"
 image-alt: "your alt text here"
 layout: page
+tags: [chapter]
 ---
 Some editors may only hop in every few weeks or every few months. They
 don’t use it enough to grasp the complexities and end up making mistakes,

@@ -1,6 +1,7 @@
 ---
 title: More editors, more problems
 layout: page
+tags: [chapter]
 ---
 You have a large content team because you need to publish and manage a lot
 of content. But large content teams have challenges that must be overcome

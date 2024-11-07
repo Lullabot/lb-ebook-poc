@@ -3,6 +3,7 @@ title: Translation drift
 image: "page-8.png"
 image-alt: "your alt text here"
 layout: page
+tags: [chapter]
 ---
 
 Once you add translations and internationalization to the mix, you add
