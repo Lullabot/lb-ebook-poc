@@ -1,6 +1,7 @@
 ---
 title: The biggest challenges
 layout: page
+tags: [chapter]
 ---
 
 When trying to solve these challenges, it’s essential to realize that

@@ -1,6 +1,7 @@
 ---
-title: Don’t assume every problem has a technological solution
+title: Don't assume every problem has a technological solution
 layout: page
+tags: [chapter]
 ---
 Jumping immediately to a technological solution can sometimes be like
 adding elaborate locks on a door when there’s a gaping hole in the wall right
