@@ -1,0 +1,37 @@
+---
+layout: layout
+---
+
+{% assign currentBookSlug = page.filePathStem | split: "/" | slice: 2, 1 | join: "" %}
+{% assign bookWithPages = collections.booksWithPages | where: "book.slug", currentBookSlug | first %}
+{% assign page = bookWithPages.pages | where: "url", page.url | first %}
+{% assign previousPage = page.previous %}
+{% assign nextPage = page.next %}
+{% assign isFirstPage = page.index == 0 %}
+{% assign isLastPage = page.index == bookWithPages.pages.size | minus: 1 %}
+
+{% assign pageIndex = page.index | plus: 1 %}
+{% if pageIndex < 10 %}
+  {% assign pageIndex = "0" | append: pageIndex %}
+{% endif %}
+
+
+<div class="ebook-page-container">
+  <div class="ebook-heading-container">
+    <div class="ebook-page-heading">
+      <p class="ebook-page-number">Page {{ pageIndex }}</p>
+      <p class="ebook-page-title">{{ title }} </p>
+    </div>
+    <div class="ebook-copy">
+      <div class="copy-paragraph">{{ content }}</div>
+    </div>
+  </div>
+  {% if image %}
+    <div class="ebook-image">
+      {% assign currentBookSlug = page.filePathStem | split: "/" | slice: 2, 1 | join: "" %}
+      <img src="/ebooks/{{ currentBookSlug }}/images/{{ image }}" alt="{{ image-alt }}">
+    </div>
+  {% endif %}
+</div>
+
+{% include 'pagination.liquid' %}
