@@ -2,9 +2,9 @@
 title: "Table of Contents"
 layout: table-of-contents
 pagination:
-  data: collections.booksWithChapters
+  data: collections.bookWithPages
   size: 1
-  alias: "bookWithChapters"
+  alias: "bookWithPages"
   filter: "{{ page.filePathStem.split('/')[2] }}"
 ---
 
