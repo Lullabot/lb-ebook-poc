@@ -2,7 +2,8 @@
 title: "Research"
 image: "Personas@2x.jpg"
 image-alt: "your alt text here"
-layout: chapter
+layout: page
+tags: [chapter]
 ---
 
 The first step is to investigate the problem and identify patterns and commonalities that can be used to advance the project and gain buy-in from all stakeholders. Two approaches are available: user research (both internal and external) and content analysis.

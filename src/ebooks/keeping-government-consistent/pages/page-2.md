@@ -2,7 +2,8 @@
 title: "Why Governing Archipelagos Can Be Challenging"
 image: "illustration_umbrella-org.png"
 image-alt: "your alt text here"
-layout: chapter
+layout: page
+tags: [chapter]
 ---
 
 With most website projects, there are two main stakeholders: the organization and the users.

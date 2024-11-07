@@ -1,6 +1,7 @@
 ---
 title: "Measure and Iterate"
-layout: chapter
+layout: page
+tags: [chapter]
 ---
 
 The purpose of a state agency website (or network of websites) is to deliver content to users in a way that meets users’ needs while accomplishing the organization's goals. To achieve this purpose, you need to identify metrics and use analytics tools to help you measure and iterate as necessary.
