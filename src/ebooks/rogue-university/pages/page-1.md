@@ -3,6 +3,7 @@ title: "Introduction"
 image: "illustration_archepelago.png"
 image-alt: "your alt text here"
 layout: page
+tags: [chapter]
 ---
 
 The web presence of a university is often a loosely coupled network of websites that act as subsidiaries under an umbrella organization. This presents unique challenges because there are so many stakeholders involved, and the varying needs can conflict.

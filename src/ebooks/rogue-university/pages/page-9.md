@@ -1,6 +1,7 @@
 ---
 title: "Conclusions"
 layout: page
+tags: [chapter]
 ---
 
 In most projects, your goal is not to change the world. The vast majority of the problems you encounter in archipelago projects are organizational and political, which are outside of the official scope. Cultures can take decades to change.
