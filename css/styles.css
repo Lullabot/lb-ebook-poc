@@ -89,14 +89,14 @@ main {
 .navigation-wrapper .toc-container .toc-column {
   max-width: unset;
 }
-.navigation-wrapper .toc-container .chapter-item {
+.navigation-wrapper .toc-container .page-item {
   font-size: 1em;
   font-weight: 400;
   padding: 0.75rem 3rem 0.75rem 2.5rem;
   gap: 1rem;
   border-left: 0.5rem solid #fff;
 }
-.navigation-wrapper .toc-container .chapter-item:hover {
+.navigation-wrapper .toc-container .page-item:hover {
   border-left-color: #f81e00;
 }
 .navigation-wrapper .toc-container .resources-link {
@@ -292,14 +292,14 @@ div.get-started .gs-arrow-right {
 .toc-container .toc-column {
   flex: 1;
 }
-.toc-container .chapter-item {
+.toc-container .page-item {
   font-size: 1.25rem;
   font-weight: 700;
   color: #01070b;
   display: flex;
   align-items: flex-start;
 }
-.toc-container .chapter-item .chapter-count {
+.toc-container .page-item .page-count {
   color: #cf1900;
   flex-shrink: 0;
   height: 2rem;
@@ -310,19 +310,19 @@ div.get-started .gs-arrow-right {
   justify-content: center;
   font-weight: 400;
 }
-.toc-container .chapter-item a {
+.toc-container .page-item a {
   text-decoration: none;
   color: inherit;
 }
-.toc-container .chapter-item .chapter-title-wrapper {
+.toc-container .page-item .page-title-wrapper {
   display: flex;
   flex-direction: column;
   padding-top: 0.25rem;
 }
-.toc-container .chapter-item:hover {
+.toc-container .page-item:hover {
   background-color: #f4f5f6;
 }
-.toc-container .chapter-item:hover a {
+.toc-container .page-item:hover a {
   text-decoration: underline;
 }
 
@@ -331,21 +331,21 @@ div.get-started .gs-arrow-right {
   padding-left: 1rem;
   font-weight: unset;
 }
-.toc-container-page .chapter-item {
+.toc-container-page .page-item {
   font-weight: unset;
   font-size: 1.5rem;
   padding: 1rem;
   gap: 1rem;
   border-radius: 0.5rem;
 }
-.toc-container-page .chapter-item:hover .chapter-count {
+.toc-container-page .page-item:hover .page-count {
   background-color: #f4f5f6;
 }
-.toc-container-page .chapter-item .chapter-title-wrapper {
+.toc-container-page .page-item .page-title-wrapper {
   padding-top: 0.125rem;
 }
 
-p .chapter {
+p .page {
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 2em;
@@ -368,20 +368,21 @@ p .title {
 .ebook-page-container div {
   padding: 5%;
 }
-.ebook-page-container .ebook-chapter-heading {
+.ebook-page-container .ebook-page-heading {
   padding-bottom: 0;
 }
-.ebook-page-container .ebook-chapter-heading .ebook-chapter-number {
+.ebook-page-container .ebook-page-heading .ebook-page-number {
   text-transform: uppercase;
-  color: #cf1900;
+  color: #869EAE;
   letter-spacing: 0.1em;
   font-weight: 500;
+  font-size: 1rem;
 }
-.ebook-page-container .ebook-chapter-heading .ebook-chapter-title {
+.ebook-page-container .ebook-page-heading .ebook-page-title {
   font-size: 1.75rem;
   font-weight: bold;
 }
-.ebook-page-container .ebook-copy .ebook-chapter-title {
+.ebook-page-container .ebook-copy .ebook-page-title {
   font-size: 1.75rem;
   font-weight: bold;
 }
