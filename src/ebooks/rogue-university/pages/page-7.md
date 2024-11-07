@@ -1,7 +1,7 @@
 ---
 title: "Verify Conclusions"
 image: "content-types.png"
-image-alt: "Two differnt ways content types can be presented. The top is an early flowchart. The bottom is a page in the CMS."
+image-alt: "Two different ways content types can be presented. The top is an early flowchart. The bottom is a page in the CMS."
 layout: page
 tags: [chapter]
 ---
