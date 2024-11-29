@@ -87,6 +87,23 @@ main {
       font-size: 1.25em;
       padding: 1em;
     }
+
+    .short-title {
+      display: none;
+    }
+  }
+}
+
+@media (height <= 920px) {
+  .sidebar .page-title {
+    div {
+      .full-title {
+        display: none;
+      }
+      .short-title {
+        display: inline;
+      }
+    }
   }
 }
 
@@ -520,11 +537,19 @@ p {
     flex-direction: row;
 
     .page-title {
-      transform: rotate(90deg);
+      transform: none;
+      width: auto;
 
       div {
-        overflow: hidden;
-        text-overflow: ellipsis;
+        transform: none;
+        padding: 1em;
+
+        .full-title {
+          display: none;
+        }
+        .short-title {
+          display: inline;
+        }
       }
     }
   }

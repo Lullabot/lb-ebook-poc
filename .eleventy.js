@@ -4,11 +4,11 @@ const path = require("path");
 module.exports = function (eleventyConfig) {
   // Generate a collection of all books with their pages
   eleventyConfig.addCollection("booksWithPages", function (collectionApi) {
-    const books = collectionApi.getFilteredByGlob("src/ebooks/*/cover.md");
+    const books = collectionApi.getFilteredByGlob("src/ebooks/*/index.html");
     const pages = collectionApi.getFilteredByGlob("src/ebooks/*/pages/*.md");
 
     return books.map(book => {
-      const bookSlug = book.filePathStem.split("/")[2];
+      const bookSlug = book.filePathStem.split('/')[2];
       const bookPages = pages
         .filter(page => page.inputPath.includes(bookSlug))
         .sort((a, b) => {
@@ -19,8 +19,10 @@ module.exports = function (eleventyConfig) {
 
       return {
         book: {
-          ...book.data,
+          title: book.data.title,
+          shortTitle: book.data.shortTitle,
           slug: bookSlug,
+          url: book.url
         },
         pages: bookPages.map((page, index) => ({
           ...page.data,  // Include all frontmatter data
