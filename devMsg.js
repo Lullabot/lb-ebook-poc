@@ -6,7 +6,7 @@ const fs = require('fs');
 // for use when developing
 fs.readdir(`${__dirname}/src/ebooks`, (err, files) => {
   files = files.filter(item => !(/(^|\/)\.[^\/\.]/g).test(item)); // ignore hidden files
-  files = files.map((file) => `http://localhost:8080/ebooks/${file}/cover`);
+  files = files.map((file) => `http://localhost:8081/ebooks/${file}/cover`);
   files.unshift('Select any ebook below when contributing:');
   if (err)
     console.log(err);
