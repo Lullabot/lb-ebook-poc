@@ -10,9 +10,11 @@
   {% assign currentBookSlug = page.filePathStem | split: "/" | slice: 2, 1 | join: "" %}
   {% for bookWithPages in collections.booksWithPages %}
     {% if bookWithPages.book.slug == currentBookSlug %}
-
       <div class="page-title">
-        <div>{{ bookWithPages.book.title }}</div>
+        <div>
+          <span class="full-title">{{ bookWithPages.book.title }}</span>
+          <span class="short-title">{{ bookWithPages.book.shortTitle | default: bookWithPages.book.title }}</span>
+        </div>
       </div>
       <div class="page-number">
         <div aria-label="Current page number">
