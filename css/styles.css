@@ -71,7 +71,18 @@ main {
   font-size: 1.25em;
   padding: 1em;
 }
+.sidebar .page-title .short-title {
+  display: none;
+}
 
+@media (height <= 920px) {
+  .sidebar .page-title div .full-title {
+    display: none;
+  }
+  .sidebar .page-title div .short-title {
+    display: inline;
+  }
+}
 .navigation-wrapper {
   max-width: 472px;
   position: absolute;
@@ -445,11 +456,18 @@ p .title {
     flex-direction: row;
   }
   .sidebar .page-title {
-    transform: rotate(90deg);
+    transform: none;
+    width: auto;
   }
   .sidebar .page-title div {
-    overflow: hidden;
-    text-overflow: ellipsis;
+    transform: none;
+    padding: 1em;
+  }
+  .sidebar .page-title div .full-title {
+    display: none;
+  }
+  .sidebar .page-title div .short-title {
+    display: inline;
   }
   .navigation-wrapper {
     top: -72px;
