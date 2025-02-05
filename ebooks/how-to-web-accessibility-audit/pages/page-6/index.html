@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Elements that require extra attention</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-right.css' rel='stylesheet'>
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-left.css' rel='stylesheet'>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="/img/favicon.ico" type="image/vnd.microsoft.icon"/>
+</head>
+<body>
+
+  <div class="sidebar">
+  
+<div class="logo-container">
+
+  <a href="https://lullabot.com/" aria-label="Lullabot.com homepage">
+    <div>
+      <img src="/img/logo.svg" alt="Lullabot.com homepage" />
+    </div>
+  </a>
+</div>
+
+  
+    <div class="navigation-btn">
+      <div class="hamburger-icon"><svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path class="hamburger-bg" d="M0 0H72V72H0V0Z" fill="white" />
+  <g class="hamburger-lines">
+    <path d="M20 28H52" stroke="#01070B" stroke-width="1.5" />
+    <path d="M20 36H52" stroke="#01070B" stroke-width="1.5" />
+    <path d="M20 44H52" stroke="#01070B" stroke-width="1.5" />
+  </g>
+</svg>
+</div>
+      <div class="close-icon hidden"><svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path class="close-bg" d="M0 0H72V72H0V0Z" fill="white"/>
+  <g class="close-lines">
+    <path d="M24.6863 47.3137L47.3137 24.6863" stroke="#01070B" stroke-width="1.5"/>
+    <path d="M24.6863 24.6863L47.3137 47.3137" stroke="#01070B" stroke-width="1.5"/>
+  </g>
+</svg>
+</div>
+    </div>
+  
+
+  
+  
+    
+      <div class="page-title">
+        <div>
+          <span class="full-title">How to Do a Web Accessibility Audit</span>
+          <span class="short-title">How to Do a Web Accessibility Audit</span>
+        </div>
+      </div>
+      <div class="page-number">
+        <div aria-label="Current page number">
+          <span class="visually-hidden">Page: </span>
+          
+            6
+          
+        </div>
+      </div>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</div>
+  <main><div class="navigation-wrapper hidden">
+  <div class="toc-container">
+    <p>Table of Contents</p>
+    
+    
+    
+      
+        
+        
+        
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+        
+        
+        <div class="toc-column">
+          
+            
+              <div class="page-item">
+                <span class="page-count">01</span>
+                <div class="page-title-wrapper">
+                  <a href="/ebooks/how-to-web-accessibility-audit/pages/page-1/">Introduction</a>
+                </div>
+              </div>
+              
+            
+          
+            
+              <div class="page-item">
+                <span class="page-count">02</span>
+                <div class="page-title-wrapper">
+                  <a href="/ebooks/how-to-web-accessibility-audit/pages/page-2/">Getting started: Automate your first steps</a>
+                </div>
+              </div>
+              
+            
+          
+            
+          
+            
+              <div class="page-item">
+                <span class="page-count">03</span>
+                <div class="page-title-wrapper">
+                  <a href="/ebooks/how-to-web-accessibility-audit/pages/page-4/">Manual audit</a>
+                </div>
+              </div>
+              
+            
+          
+            
+          
+            
+              <div class="page-item">
+                <span class="page-count">04</span>
+                <div class="page-title-wrapper">
+                  <a href="/ebooks/how-to-web-accessibility-audit/pages/page-6/">Elements that require extra attention</a>
+                </div>
+              </div>
+              
+            
+          
+            
+              <div class="page-item">
+                <span class="page-count">05</span>
+                <div class="page-title-wrapper">
+                  <a href="/ebooks/how-to-web-accessibility-audit/pages/page-7/">Remediation</a>
+                </div>
+              </div>
+              
+            
+          
+        </div>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    <p class="resources-link">This Ebook was produced by Lullabot. For more articles, ebooks, and more check out our <a
+        href="https://www.lullabot.com/resources">Resources</a> page.</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+<div class="ebook-page-container">
+  <div class="ebook-heading-container">
+    <div class="ebook-page-heading">
+      <p class="ebook-page-number">Page 06</p>
+      <p class="ebook-page-title">Elements that require extra attention </p>
+    </div>
+    <div class="ebook-copy">
+      <div class="copy-paragraph"><h3>Sliders (or carousels)</h3>
+<p>To make sliders accessible, follow these key guidelines:</p>
+<ul>
+<li><strong>No auto-rotation:</strong> Carousels should only move when the user triggers the movement. Auto-rotation can be disruptive for users with ADHD, motion sensitivity, or visual impairments.</li>
+<li><strong>Screen reader notifications:</strong> When the slide changes, the screen reader should notify the user and read out the content.</li>
+<li><strong>Hidden content:</strong> The content on hidden slides should not be accessible to screen readers or keyboard users.</li>
+<li><strong>Navigation:</strong> Whether the slider uses arrow, dot, or thumbnail navigation, they need to be marked up as buttons, reach the minimum target size of 24px by 24px (preferably 40px by 40px), have appropriate text-alternative labels, and focus should move to the newly visible slider when the navigation is triggered.</li>
+</ul>
+<p>Learn more about the <a href="https://www.w3.org/WAI/ARIA/apg/patterns/carousel/">Carousel (Slide Show or Image Rotator) Pattern</a>.</p>
+<h3>Modals</h3>
+<p>Make modals accessible with these best practices:</p>
+<ul>
+<li><strong>Focus handling:</strong> When the modal is opened, the focus should automatically move to the first focusable element in the modal. Focus should then only loop among focusable elements in the modal, never moving “behind” the modal. When the modal is closed, focus should return to the element that triggered the modal to open.</li>
+<li><strong>Close modal:</strong> Include a visible “close” button with an appropriate text alternative if an icon is used. The Escape key should also close the modal.</li>
+<li><strong>Screen reader compatibility:</strong> The screen reader should not be able to read the contents of the modal unless it’s open. Use aria-modal=”true” and role=”dialog”  so screen readers recognize the content they’re interacting with is a modal.</li>
+</ul>
+<p>Learn more about the <a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/">Dialog (modal) Pattern</a>.</p>
+<h3>Accordions</h3>
+<p>Enhance accordion accessibility by considering the following:</p>
+<ul>
+<li><strong>Semantic elements:</strong> Use an HTML button element for the accordion trigger to ensure keyboard users can navigate it with standard keyboard commands.</li>
+<li><strong>Attributes:</strong> Apply <code>aria-expanded</code> and <code>aria-controls</code> to triggers, and <code>aria-labelledby</code> with <code>role=&quot;region&quot;</code> for panels, helping screen reader users understand the structure.</li>
+<li><strong>Hidden content:</strong> Ensure the hidden content cannot be tabbed to or read by screen reader users until the accordion is open.</li>
+</ul>
+<p>Learn more about the <a href="https://www.w3.org/WAI/ARIA/apg/patterns/accordion/">Accordion Pattern</a>.</p>
+<h3>Videos</h3>
+<p>Below are some common issues to spot with video and audio players:</p>
+<ul>
+<li><strong>Transcripts:</strong> Provide transcripts for audio-only media to support hearing-impaired users and benefit anyone who prefers reading, forgot their headphones, or is in a noisy space.</li>
+<li><strong>Captions:</strong> Add captions to pre-recorded videos with sound to benefit all users. If a video is silent, let screen reader users know to avoid confusion.</li>
+<li><strong>Audio descriptions:</strong> Offer audio descriptions of video, whether it has audio or not so blind users understand the context of the video as it plays.</li>
+<li><strong>Screen reader and keyboard support:</strong> The audio and video players themselves must be accessible for screen readers, assistive technology, and keyboard users.</li>
+<li><strong>Pause button for autoplay videos:</strong> No pause button is a common issue, as many websites have an auto-playing video on their homepage hero. This is crucial for users who are motion-sensitive or prone to seizures. Again, this could be considered an enhancement for all users, as many people get distracted by movement on a page.</li>
+</ul>
+<p>Learn more about a <a href="https://www.w3.org/WAI/media/av/planning/">media accessibility checklist</a>.</p>
+<h3>Main menus</h3>
+<p>Main menus are arguably the most important part of a website, so pay careful attention. Here are some ways to make navigation intuitive and accessible:</p>
+<ul>
+<li><strong>Keyboard support:</strong> Ensure all dropdown menus and links can be accessed via keyboard navigation.</li>
+<li><strong>Target sizes:</strong> Ensure the target sizes for dropdown and hamburger buttons are at least 24 by 24 pixels.</li>
+<li><strong>Screen reader support:</strong> Use semantic markup and aria attributes to provide necessary context to screen reader users. Relevant semantic elements can include <code>&lt;nav&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code>, <code>&lt;button&gt;</code>, <code>&lt;a&gt;</code>. If using a <code>&lt;nav&gt;</code> element, ensure it is labeled with an <code>aria-label</code> or <code>aria-labelledby</code> attribute. <code>aria-expanded</code> and <code>aria-control</code> attributes should be used for dropdowns.</li>
+</ul>
+</div>
+    </div>
+  </div>
+  
+    <div class="ebook-image">
+      
+      <img src="/ebooks/how-to-web-accessibility-audit/images/Accessibility_Landscape.png" alt="A finger pushing a button on a website, surrounded by icons of an ear and an eye.">
+    </div>
+  
+</div>
+
+<nav class="nav-container" aria-label="E-book arrow navigation">
+  
+    
+      <a href="/ebooks/how-to-web-accessibility-audit/pages/page-5/" aria-label="Previous page">
+        <div class="nav-button">
+          <i class="gg-arrow-left"></i>
+        </div>
+      </a>
+    
+  
+
+  
+    <a href="/ebooks/how-to-web-accessibility-audit/pages/page-7/" aria-label="Next page">
+      <div class="nav-button">
+        <i class="gg-arrow-right"></i>
+      </div>
+    </a>
+  
+</nav>
+</main>
+
+
+<script src="/js/interactions.js"></script>
+</body>
+</html>
