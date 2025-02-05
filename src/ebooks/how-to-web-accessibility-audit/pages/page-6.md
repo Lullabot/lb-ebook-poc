@@ -1,5 +1,7 @@
 ---
 title: "Elements that require extra attention"
+image: Accessibility_Landscape.png
+image-alt: A finger pushing a button on a website, surrounded by icons of an ear and an eye.
 layout: page
 tags:
   - chapter

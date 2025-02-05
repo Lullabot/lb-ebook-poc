@@ -1,5 +1,7 @@
 ---
 title: Introduction
+image: CMSUser_Portrait.png
+image-alt: A person sitting in front of a computer screen clicking elements on a website
 layout: page
 tags:
   - chapter

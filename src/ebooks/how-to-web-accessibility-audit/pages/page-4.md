@@ -1,5 +1,7 @@
 ---
 title: "Manual audit"
+image: EditorialWorkflow_Portrait.png
+image-alt: Three people working together from a checklist, a calendar, and finally the finished website.
 layout: page
 tags:
   - chapter
