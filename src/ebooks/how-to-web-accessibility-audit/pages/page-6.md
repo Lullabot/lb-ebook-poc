@@ -6,7 +6,6 @@ layout: page
 tags:
   - chapter
 ---
-
 ### Sliders (or carousels)
 To make sliders accessible, follow these key guidelines:
 - **No auto-rotation:** Carousels should only move when the user triggers the movement. Auto-rotation can be disruptive for users with ADHD, motion sensitivity, or visual impairments. 

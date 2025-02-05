@@ -4,7 +4,6 @@ layout: page
 tags:
   - chapter
 ---
-
 ### Gather a sample of URLs to test
 To kickstart your automated accessibility audit, select at least 50 pages on your website. Aim for a diverse sample that represents as many content types and components as possible. Include forms, tables, accordions, popups, sliders, filters, and anything your users could interact with. The more variety, the better your audit coverage.
 

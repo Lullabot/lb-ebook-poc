@@ -1,8 +1,9 @@
 ---
 title: "Accessibility checklist: what to look for on each page"
+image: QA_Portrait.png
+image-alt: A women with a thumbs up in front of several web page elements like forms and and charts
 layout: page
 ---
-
 [Keep track of your progress with this manual audit spreadsheet](https://docs.google.com/spreadsheets/d/1EDh0nzHF-LroFjLmSGLib4ylLaNe8_Tm-J1KcSSIf4I/edit?gid=0#gid=0).
 
 Make sure your website works for everyone by checking these key areas:
