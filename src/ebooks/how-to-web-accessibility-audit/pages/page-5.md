@@ -10,10 +10,10 @@ Make sure your website works for everyone by checking these key areas:
 
 1. **Screen reader:** Test with popular screen readers like JAWS, NVDA, or VoiceOver. Ensure all elements provide context, can be* accessed easily, and don’t “trap” users.
 2. **Keyboard:** Ditch the mouse and navigate only with your keyboard. Note the elements you cannot access or interact with, and watch for lost focus—it may signal a missing focus state or movement to a hidden element.
-  a. [WCAG 2.2 Level A: Keyboard](https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html)
-  b. [WCAG 2.2 Level A: No Keyboard Trap](https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap.html)
+    a. [WCAG 2.2 Level A: Keyboard](https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html)
+    b. [WCAG 2.2 Level A: No Keyboard Trap](https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap.html)
 3. **Usability & flow:** Is everything intuitive and predictable? Buttons should look and function like buttons, links should look and function like links, and so on. Check the tab order to ensure a smooth, logical experience.
-  a. [WCAG 2.2 Level A: Focus Order](https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html)
+    a. [WCAG 2.2 Level A: Focus Order](https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html)
 4. **Forms:** Ensure all forms have the appropriate semantic elements and attributes and have a label to provide context. If a captcha is used, be sure there are alternatives to accommodate different disabilities.
     a. [WCAG 2.2 Level A: Info and Relationships](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html)
     b. [WCAG 2.2 Level AA: Headings and Labels](https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels.html)
