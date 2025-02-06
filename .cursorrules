@@ -1,0 +1,49 @@
+# What You Can Build
+Static site generator for eBooks with accessibility features, responsive design, and optimized images
+
+# Benefits
+- Consistent content structure using Markdown with required frontmatter
+- Optimized image processing with responsive sizes and lazy loading
+- Accessible navigation and semantic HTML structure
+- Modular Sass styling with defined color schemes and breakpoints
+- Automated build process with Eleventy
+
+# Synopsis
+Developers building accessible, responsive eBooks using Eleventy and Sass will benefit from structured content management, optimized assets, and semantic HTML output.
+
+# Overview of .cursorrules prompt
+The .cursorrules file provides guidelines for developing eBook content using Eleventy as a static site generator. It emphasizes:
+
+1. Content Structure
+- Use Markdown with required frontmatter (title, layout, tags, image metadata)
+- Organize content in src/ebooks directory with consistent page structure
+- Follow semantic HTML principles for accessibility
+
+2. Styling and Design
+- Implement modular Sass with defined breakpoints
+- Use responsive images with specified widths [260, 570]
+- Ensure keyboard navigation and screen reader support
+- Apply consistent typography with custom fonts
+
+3. Build Process
+- Optimize images during build with eleventy-img
+- Process Sass to CSS with defined color schemes
+- Pass through static assets (images, fonts, JS)
+- Generate static site with proper file structure
+
+4. Development Standards
+- Follow functional JavaScript style
+- Use single quotes and 2-space indentation
+- Implement async handling for image processing
+- Maintain modular Sass with max 4-level nesting
+
+5. Accessibility Requirements
+- Semantic HTML structure
+- Alt text for all images
+- ARIA labels where needed
+- Keyboard navigation support
+- Screen reader compatibility
+- Proper contrast ratios
+- Clear focus indicators
+
+The file serves as a comprehensive guide for maintaining consistent development practices while ensuring accessibility and performance in the generated eBooks.
